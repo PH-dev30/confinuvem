@@ -15,7 +15,7 @@ O nome da marca é **ConfiNuvem**. Ele funde *"Confiança"* (confiabilidade, sig
 ### 3.1.2 Valores da marca
 
 1. **Segurança e proteção cibernética** no tratamento de dados sensíveis.
-2. **Confiabilidade e redundância** contra perda de arquivos físicos.
+2. **Confiabilidade** contra perda de arquivos físicos.
 3. **Modernização tecnológica simplificada** para empresas sem equipe própria de TI.
 4. **Educação e autonomia** por meio da capacitação dos funcionários do cliente.
 5. **Parceria contínua** no suporte pós-migração.
@@ -52,9 +52,9 @@ A ConfiNuvem oferece um **portfólio de serviços individualizados** que podem s
 | 4 | Capacitação de equipes | **Trilha ConfiNuvem** | Avulsa / Pacote (por hora) | Recomendada pós-Execução |
 | 5 | Gestão contínua (Managed Services) | **ConfiNuvem Care** | **Mensal recorrente (faixas)** | Independente |
 
-> **Nota:** O serviço de Gestão Contínua (ConfiNuvem Care) é detalhado na seção 3.6 com metodologia, faixas e preços próprios (MRR). Os serviços 1–4 seguem precificação por hora de consultoria (seção 3.3).
+> **Nota:** O serviço de Gestão Contínua (ConfiNuvem Care) é detalhado na seção 3.6 com metodologia, faixas e preços próprios (MRR). Os serviços 1–4 seguem precificação por hora de serviços especializados (seção 3.3).
 
-### 3.2.2 Detalhamento dos serviços de consultoria (1–4)
+### 3.2.2 Detalhamento dos serviços especializados (1–4)
 
 #### 1. Diagnóstico ConfiNuvem (Avaliação)
 - **Escopo:** Análise de inventário de dados, volumetria, requisitos de segurança, conformidade LGPD, maturidade cloud e riscos.
@@ -66,33 +66,33 @@ A ConfiNuvem oferece um **portfólio de serviços individualizados** que podem s
 - **Escopo:** Definição de arquitetura alvo (Google Cloud, AWS, Supabase, NeonDB), seleção de ferramentas de segurança e backup, cronograma detalhado (Gantt), TCO estimado, plano de rollback, matriz de riscos.
 - **Entregáveis:** Documento técnico (20–30 páginas), cronograma, orçamento detalhado, matriz de riscos.
 - **Duração típica:** 8–16 horas.
-- **Precificação:** R$ 52,46/hora (consultoria).
+- **Precificação:** R$ 52,46/hora (serviços especializados).
 - **Requer:** Diagnóstico prévio (pode ser fornecido pelo cliente ou contratado à parte).
 
 #### 3. Migração ConfiNuvem (Execução)
 - **Escopo:** Provisionamento de infraestrutura, migração de bancos de dados e documentos, validação de integridade, cutover planejado, testes de aceitação.
 - **Entregáveis:** Ambiente em produção, relatório de migração, checklist de validação, credenciais e acessos documentados.
 - **Duração típica:** 20–80 horas (conforme volumetria e complexidade).
-- **Precificação:** R$ 52,46/hora (consultoria).
+- **Precificação:** R$ 52,46/hora (serviços especializados).
 - **Requer:** Plano de Migração aprovado.
 
 #### 4. Trilha ConfiNuvem (Capacitação)
 - **Escopo:** Segurança da informação (senhas, phishing, LGPD), operação diária (backup, monitoramento, HashiCorp Vault), boas práticas de cloud.
 - **Entregáveis:** Sessões de treinamento (remoto ou presencial), material didático (PDF/vídeo), certificado de conclusão por participante.
 - **Duração típica:** 4–16 horas (conforme número de turmas e profundidade).
-- **Precificação:** R$ 52,46/hora (consultoria); pode ser incluída no pacote integrado.
+- **Precificação:** R$ 52,46/hora (serviços especializados); pode ser incluída no pacote integrado.
 - **Modalidades:** Inclusa no pacote, avulsa para equipe do cliente, ou recorrente para novos colaboradores.
 
 ### 3.2.3 Pacote Integrado (Protocolo ConfiNuvem)
 
-A contratação conjunta dos quatro serviços de consultoria (Avaliação + Planejamento + Execução + Capacitação) constitui o **Pacote Integrado**, com benefícios:
+A contratação conjunta dos quatro serviços especializados (Avaliação + Planejamento + Execução + Capacitação) constitui o **Pacote Integrado**, com benefícios:
 
 | Pacote | Composição | Desconto vs. avulso | Preço de referência* |
 |--------|------------|---------------------|----------------------|
 | **Migração Completa** | Diagnóstico + Planejamento + Execução + Capacitação (≈36 h) | 10% | ~R$ 1.890 |
 | **Migração + Gestão 12 meses** | Migração Completa + ConfiNuvem Care Pro × 12 meses | 15% | ~R$ 25.890 |
 
-\* Baseado em hora de consultoria R$ 52,46 (seção 3.3.7) e preços do ConfiNuvem Care (seção 3.6.4). Valores arredondados; orçamento formal emitido após Diagnóstico.
+\* Baseado em hora de serviços especializados R$ 52,46 (seção 3.3.7) e preços do ConfiNuvem Care (seção 3.6.4). Valores arredondados; orçamento formal emitido após Diagnóstico.
 
 ### 3.2.4 Matriz de dependências
 
@@ -130,7 +130,7 @@ A contratação conjunta dos quatro serviços de consultoria (Avaliação + Plan
 - **Capacitação inclusa e avulsa:** Treinamento com material didático e certificado, não apenas documentação.
 - **Gestão contínua separada (ConfiNuvem Care):** Serviço recorrente com SLA, faixas de preço e escopo claro (backup, Vault, monitoramento, suporte, compliance), alinhado ao modelo MSP de mercado.
 - **Processo em 5 etapas com dependências explícitas:** Transparência sobre o que cada fase exige e entrega.
-- **Segurança e redundância:** Ferramentas de backup (Acronis), criptografia/segredos (HashiCorp Vault), Google Cloud Migration Center no planejamento.
+- **Segurança:** Ferramentas de backup (Acronis), criptografia/segredos (HashiCorp Vault), Google Cloud Migration Center no planejamento.
 - **Fidelização:** Descontos progressivos no pacote integrado e no ConfiNuvem Care conforme anos de contrato.
 
 ## 3.3 Estratégia de precificação
@@ -211,9 +211,9 @@ Taxa de markup = 100 / (100 - 30) = 100 / 70 = 1,4286
 CUT x taxa de markup = R$ 36,72 x 1,4286 = R$ 52,46 por hora
 ```
 
-### 3.3.8 Precificação por serviço de consultoria
+### 3.3.8 Precificação por serviço especializado
 
-A hora de consultoria (R$ 52,46/h) é a base para os serviços 1–4 da seção 3.2.2. Estimativas de faixa de horas e investimento por serviço:
+A hora de serviços especializados (R$ 52,46/h) é a base para os serviços 1–4 da seção 3.2.2. Estimativas de faixa de horas e investimento por serviço:
 
 | Serviço | Faixa de horas típica | Investimento estimado (R$) |
 |---------|----------------------|----------------------------|
@@ -224,7 +224,7 @@ A hora de consultoria (R$ 52,46/h) é a base para os serviços 1–4 da seção 
 
 > **Observação:** Valores são estimativas para planejamento. Orçamento formal emitido após Diagnóstico (serviço 1), considerando volumetria, complexidade, número de bancos/documentos e requisitos de segurança do cliente.
 
-> **Serviço 5 (ConfiNuvem Care):** Precificação própria por faixas mensais (MRR), distinta da consultoria por hora. Ver seção 3.6.
+> **Serviço 5 (ConfiNuvem Care):** Precificação própria por faixas mensais (MRR), distinta dos serviços especializados por hora. Ver seção 3.6.
 
 ## 3.4 Estratégia de distribuição
 
