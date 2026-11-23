@@ -35,7 +35,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Matriz de riscos (probabilidade × impacto × mitigação)
 - Arquitetura alvo (diagrama + descrição)
 **Duração:** 8–16 horas
-**Precificação:** R$ 52,46/hora (consultoria).
+**Precificação:** R$ 52,46/hora (serviços especializados).
 **Requer:** Diagnóstico prévio (serviço 1 ou equivalente fornecido pelo cliente).
 
 ### 3. Migração ConfiNuvem (Execução)
@@ -47,7 +47,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Credenciais, acessos e documentação de operação básica
 - Guia de rollback (se necessário)
 **Duração:** 20–80 horas (conforme volumetria, número de bancos, complexidade)
-**Precificação:** R$ 52,46/hora (consultoria).
+**Precificação:** R$ 52,46/hora (serviços especializados).
 **Requer:** Plano de Migração aprovado (serviço 2).
 
 ### 4. Trilha ConfiNuvem (Capacitação)
@@ -58,7 +58,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Certificado de Conclusão "Trilha ConfiNuvem" por participante
 - Avaliação de conhecimento (quiz) com relatório para gestão
 **Duração:** 4–16 horas (conforme número de turmas, profundidade e tamanho da equipe)
-**Precificação:** R$ 52,46/hora (consultoria); incluída no Pacote Integrado.
+**Precificação:** R$ 52,46/hora (serviços especializados); incluída no Pacote Integrado.
 **Modalidades:** Inclusa no pacote, avulsa para equipe do cliente, ou recorrente para onboarding de novos colaboradores.
 
 ### 5. ConfiNuvem Care (Gestão Contínua / Managed Services)
@@ -145,7 +145,7 @@ flowchart TD
 
 ## Referências
 
-- Plano de Marketing — Seção 3.2 (Catálogo), 3.3 (Precificação consultoria), 3.6 (ConfiNuvem Care).
+- Plano de Marketing — Seção 3.2 (Catálogo), 3.3 (Precificação serviços especializados), 3.6 (ConfiNuvem Care).
 - Plano de Negócios — Missão/Visão, 5W2H, SWOT, Concorrentes.
 - ANPD — Resolução CD/ANPD nº 2/2022 (tratamento diferenciado pequeno porte).
 - Acronis, HashiCorp, Google Cloud, AWS — Pricing pages (set/2026).
