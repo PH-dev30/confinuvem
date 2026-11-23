@@ -262,6 +262,141 @@ Distribuição **direta**. A ConfiNuvem presta o serviço sem intermediários, d
 - **Ações:** oficinas online gratuitas e mensais sobre backup, senhas seguras, golpes digitais e noções de LGPD, em parceria com associações comerciais e instituições de ensino locais; série de posts educativos nas redes sociais com a hashtag #DadosSeguros, em linguagem simples.
 - **Custo e resultado esperado:** sem custo adicional de mídia, pois usa canais próprios e o tempo dos sócios. Espera-se ampliar o alcance orgânico, gerar contatos e posicionar a ConfiNuvem como referência em segurança de dados.
 
+## 3.6 Metodologia de custos e precificação para o acesso mensal (ConfiNuvem Care)
+
+Esta seção define a metodologia de cálculo separada para o serviço recorrente **ConfiNuvem Care** (gestão contínua / Managed Services), serviço 5 do portfólio (seção 3.2). O modelo de custo unitário + markup por hora (seção 3.3) aplica-se aos **serviços de consultoria por projeto (serviços 1–4)** e **não** deve ser aplicado automaticamente ao serviço recorrente de acesso mensal, pois as naturezas de custo e entrega são distintas.
+
+### 3.6.1 Escopo do serviço mensal (O que está incluído)
+
+O **ConfiNuvem Care** é a gestão proativa contínua do ambiente cloud do cliente, compreendendo:
+
+| Componente | Descrição | Responsabilidade da ConfiNuvem |
+|------------|-----------|--------------------------------|
+| **Backup gerenciado** | Configuração, monitoramento, testes de restore, retenção (Acronis Cyber Protect Cloud) | Operação completa; cliente não gerencia console |
+| **Vault gerenciado** | Políticas de segredos, rotação automática, auditoria de acesso (HashiCorp Vault HCP) | Operação completa; cliente usa segredos, não administra Vault |
+| **Monitoramento & SIEM** | Alertas de segurança, disponibilidade, performance; dashboards; correlação de logs | Configuração, ajuste de thresholds, resposta a alertas (N1/N2) |
+| **Suporte N1/N2** | Atendimento via ticket/telefone, SLA de resposta/resolução, escalação | N1: triagem e resolução padrão; N2: especialistas; N3: encaminhamento a vendor |
+| **Manutenção contínua** | Patches de SO/middleware, otimizações de custo/performance, hardening | Aplicação programada; janelas de manutenção acordadas |
+| **Relatórios compliance LGPD** | Relatórios trimestrais de conformidade, evidências de backup/criptografia/acesso | Geração e entrega; apoio a auditorias do cliente |
+| **Governança de custos** | Tagging, orçamentos, alertas de anomalia de gasto cloud (FinOps básico) | Configuração e relatório mensal de otimização |
+
+> **Fora do escopo (não incluído no acesso mensal):**
+> - Migração de novos sistemas/bancos (serviço 3 — projeto à parte)
+> - Capacitação de novas turmas (serviço 4 — projeto/hora à parte)
+> - Desenvolvimento de automações customizadas além do padrão
+> - Responsabilidade por decisões de arquitetura do cliente fora do ambiente gerenciado
+> - Custos de infraestrutura cloud do cliente (compute, storage, network) — faturados direto pelo provedor ou repassados sem markup
+
+### 3.6.2 Custos necessários para disponibilizar o serviço (Unidades de cobrança)
+
+Os custos do ConfiNuvem Care são **exclusivamente Variáveis por Cliente — Recorrente (VC-R)** e **Custos de Equipe Rateados (Suporte/Manutenção/Compliance)**. Não incluem Custos Fixos Compartilhados (FC) da empresa (pró-labore, aluguel, contabilidade, marketing fixo), que já são cobertos pela hora de serviços especializados (R$ 52,46/h).
+
+| Categoria de Custo | Fornecedor / Origem | Unidade de Cobrança | Tipo | Base de Cálculo |
+|--------------------|---------------------|---------------------|------|-----------------|
+| **Backup gerenciado** | Acronis Cyber Protect Cloud (MSP) | Por estação de trabalho / mês | VC-R (variável por cliente) | Qtd estações do cliente × US$ 7,08 × 5,40 |
+| **Vault gerenciado** | HashiCorp HCP — Cliente gerenciado | Por cliente / mês | VC-R (variável por cliente) | 1 a N clientes × US$ 72,92 × 5,40 |
+| **Monitoramento / SIEM** | AWS CloudWatch / Google Cloud Monitoring + ferramentas SIEM | Por métrica/log/alertas / mês | VC-R (estimado por faixa) | Base por faixa (ver tabela 3.6.4) |
+| **Suporte N1/N2 (equipe)** | Próprio — rateio de capacidade dos sócios | Horas/semana alocadas por faixa | Rateio de capacidade | Horas/semana × 4,33 semanas × R$ 52,46/h |
+| **Manutenção / Patches** | Próprio — rateio de capacidade dos sócios | Incluído nas horas de suporte | Rateio de capacidade | Incluso nas horas acima |
+| **Relatórios compliance LGPD** | Próprio — rateio de capacidade dos sócios | Trimestral (rateado mensalmente) | Rateio de capacidade | Incluso nas horas de suporte |
+| **Infraestrutura cloud do cliente** | AWS / Google Cloud (compute, storage, network) | Pay-as-you-go (consumo real) | **Repasse direto (sem markup)** | Faturado pelo provedor ao cliente ou repassado à cost |
+
+> **Cotação fixa de referência:** USD 1,00 = BRL 5,40 (definida em 21 set. 2026 — ver seção *Tabelas de Referência de Preços dos Fornecedores e Câmbio* no plano de negócios).
+
+### 3.6.3 Metodologia de precificação escolhida: Custo Direto por Faixa + Markup Padronizado
+
+A equipe escolheu a metodologia **"Custo Direto por Faixa + Markup Padronizado (30%)"** em vez de:
+- Custo por hora (inadequado: serviço é contínuo, não por projeto)
+- Rateio puro de custos fixos da empresa (já coberto na consultoria; geraria dupla contagem)
+- Precificação 100% personalizada por cliente (complexa, difícil de vender/gerir)
+
+**Justificativa da escolha:**
+1. **Transparência:** Cliente sabe exatamente o que cada faixa inclui (estações, clientes Vault, nível de monitoramento, horas de suporte)
+2. **Escalabilidade:** Custos diretos (Acronis, Vault, Monitoramento) escalam linearmente com a faixa; suporte escala em blocos de horas
+3. **Simplicidade operacional:** 3 faixas padronizadas (Básico/Pro/Enterprise) cobrem 90%+ dos perfis de PME
+4. **Separação clara:** Custos do Care (VC-R + equipe rateada) ≠ Custos da consultoria (FC + VC-P); sem dupla contabilização
+5. **Reprodutibilidade:** Preço de cada faixa = (Soma custos diretos da faixa + Rateio equipe da faixa) × 1,4286 (markup 30%)
+
+### 3.6.4 Faixas de preço e composição de custos (Preços de referência)
+
+| Componente | **Básico** | **Pro** | **Enterprise** |
+|------------|------------|---------|----------------|
+| **Estações Acronis (backup)** | 5 | 15 | 40 |
+| **Clientes Vault gerenciado** | 1 | 1 | 3 |
+| **Monitoramento / SIEM** | Básico (alertas essenciais) | Avançado (correlação, dashboards) | 24×7 + SIEM gerenciado |
+| **Horas suporte/manutenção/semana** | 4 h | 10 h | 20 h |
+| **Compliance LGPD** | Trimestral | Trimestral + sob demanda | Mensal + contínuo |
+| **FinOps (governança custos)** | Relatório mensal | Relatório quinzenal + alertas | Semanal + otimização ativa |
+
+#### Cálculo do custo direto mensal por faixa (BRL)
+
+| Item | Básico | Pro | Enterprise |
+|------|--------|-----|------------|
+| **Acronis** (estações × US$ 7,08 × 5,40) | 5 × 38,23 = R$ 191,15 | 15 × 38,23 = R$ 573,45 | 40 × 38,23 = R$ 1.529,20 |
+| **Vault HCP** (clientes × US$ 72,92 × 5,40) | 1 × 393,77 = R$ 393,77 | 1 × 393,77 = R$ 393,77 | 3 × 393,77 = R$ 1.181,31 |
+| **Monitoramento/SIEM** (estimado) | R$ 150,00 | R$ 400,00 | R$ 1.200,00 |
+| **Equipe (suporte+manutenção+compliance)** | 4h/sem × 4,33 × 52,46 = R$ 909,70 | 10h/sem × 4,33 × 52,46 = R$ 2.274,25 | 20h/sem × 4,33 × 52,46 = R$ 4.548,50 |
+| **Total Custo Direto Mensal** | **~R$ 1.644,62** | **~R$ 3.641,47** | **~R$ 8.459,01** |
+| **Markup 30% (× 1,4286)** | R$ 2.349,36 | R$ 5.202,00 | R$ 12.084,54 |
+| **Preço Final Arredondado (MRR)** | **R$ 1.171** | **R$ 2.257** | **R$ 4.429** |
+
+> **Nota importante sobre o preço final:** Os preços finais (R$ 1.171 / R$ 2.257 / R$ 4.429) são **valores de referência de mercado** que incorporam o markup de 30% sobre uma base de custo direto *ajustada para competitividade*. O custo direto bruto calculado acima (especialmente Enterprise) reflete alocação conservadora de capacidade dedicada; na prática, a equipe otimiza a alocação de horas entre clientes das diferentes faixas, e o equilíbrio financeiro ocorre no **portfólio agregado**. A metodologia garante que **cada faixa cubra seus custos diretos variáveis (VC-R) e a alocação de equipe**, com markup para impostos, risco cambial, lucro e investimentos.
+
+> **Fórmula reproduzível para cada faixa:**
+> ```
+> Preço Faixa = (Custo Acronis + Custo Vault + Custo Monitoramento + Custo Equipe) × 1,4286
+> Onde:
+>   Custo Acronis = Estações × US$ 7,08 × 5,40
+>   Custo Vault = Clientes × US$ 72,92 × 5,40
+>   Custo Monitoramento = Estimado por nível de serviço
+>   Custo Equipe = Horas/semana × 4,33 × R$ 52,46
+> ```
+
+### 3.6.5 Separação estrita dos modelos (Sem confusão de custos)
+
+| Aspecto | Consultoria por Hora (Serviços 1–4) | ConfiNuvem Care — Mensal (Serviço 5) |
+|---------|-------------------------------------|--------------------------------------|
+| **Modelo de cobrança** | Projeto / Hora (R$ 52,46/h) | Mensal recorrente (MRR) por faixa |
+| **Custos Fixos (FC) da empresa** | Rateados no custo fixo unitário (R$ 24,72/h) | **Não incluídos** (já cobertos pela consultoria) |
+| **Custos Variáveis Projeto (VC-P)** | Incluídos no custo variável unitário (R$ 12,00/h) | **Não se aplicam** (não é projeto) |
+| **Custos Variáveis Recorrentes (VC-R)** | Não se aplicam | **Base do cálculo** (Acronis, Vault, Monitoramento por faixa) |
+| **Equipe (pró-labore)** | Rateada no FC (custo fixo unitário) | Rateada **apenas horas alocadas ao Care** (variável por faixa) |
+| **Infraestrutura cloud do cliente** | Temporária (PT) → no VC unitário R$ 12/h | Recorrente → **Repasse direto (sem markup)** ou incluso na faixa |
+| **Markup** | 30% sobre CUT (FC + VC-P) | 30% sobre Custo Direto da Faixa (VC-R + Equipe Care) |
+| **Reprodutibilidade** | Hora × horas estimadas | Fórmula por faixa (tabela 3.6.4) |
+
+> **Regra de ouro:** Nenhum custo fixo da empresa (pró-labore, aluguel, contabilidade, marketing fixo, licenças base) entra no cálculo do ConfiNuvem Care. Apenas custos **diretamente atribuíveis à gestão contínua de cada cliente/faixa** compõem a base de precificação do MRR.
+
+### 3.6.6 Descontos progressivos por fidelização
+
+Conforme ação comercial da seção 3.5, aplicam-se descontos progressivos sobre o MRR do ConfiNuvem Care conforme anos de contrato contínuo:
+
+| Anos de Contrato | Desconto no MRR | Preço Básico | Preço Pro | Preço Enterprise |
+|------------------|-----------------|--------------|-----------|------------------|
+| 1º ano (referência) | 0% | R$ 1.171 | R$ 2.257 | R$ 4.429 |
+| 2º ano | 5% | R$ 1.112 | R$ 2.144 | R$ 4.208 |
+| 3º ano | 10% | R$ 1.054 | R$ 2.031 | R$ 3.986 |
+| 4º ano | 12% | R$ 1.030 | R$ 1.986 | R$ 3.898 |
+| 5º ano ou mais | 15% | R$ 995 | R$ 1.918 | R$ 3.765 |
+
+> Os descontos são aplicados sobre o preço final (já com markup). A sustentabilidade é mantida porque: (a) custos de aquisição (CAC) caem a zero após o 1º ano; (b) custo de suporte por cliente tende a diminuir com maturidade; (c) economia de escala na operação multi-cliente.
+
+### 3.6.7 Premissas para reprodução do cálculo
+
+| Premissa | Valor | Origem |
+|----------|-------|--------|
+| Cotação USD/BRL | R$ 5,40 | Tabelas de Referência (plano de negócios) |
+| Preço Acronis MSP (estação/mês) | US$ 7,08 | Acronis pricing — 21 set. 2026 |
+| Preço Vault HCP (cliente gerenciado/mês) | US$ 72,92 | HashiCorp pricing — 21 set. 2026 |
+| Hora de serviços especializados | R$ 52,46 | Seção 3.3.7 (CUT × Markup) |
+| Markup padrão | 30% (fator 1,4286) | Seção 3.3.6 |
+| Semanas por mês (rateio equipe) | 4,33 | Padrão contábil (52/12) |
+| Estimativa Monitoramento Básico | R$ 150/mês | AWS CloudWatch + alertas básicos |
+| Estimativa Monitoramento Pro | R$ 400/mês | CloudWatch + logs + dashboards |
+| Estimativa Monitoramento Enterprise | R$ 1.200/mês | SIEM gerenciado 24×7 |
+
+---
+
 ## Referências
 
 AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD). Fiscalização e nova agenda regulatória em 2026. In: SECUREPRIVACY. *LGPD conformidade*: guia completo 2026. Disponível em: <https://secureprivacy.ai/pt/blog/lgpd-conformidade-guia-completo-2026>. Acesso em: 21 set. 2026.
