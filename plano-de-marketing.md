@@ -179,11 +179,15 @@ Custo fixo total / capacidade produtiva = R$ 8.307,24 / 336 h = R$ 24,72 por hor
 
 Custos que crescem com o volume de projetos: infraestrutura de homologação e armazenamento temporário na nuvem durante a migração, e licenças de backup e segurança por cliente (Acronis, HashiCorp), cobradas por uso.
 
-Estimativa para um projeto de referência (pequena empresa, 40 horas de serviço): R$ 480,00 de infraestrutura e licenças (preços de fornecedores em dólar, convertidos de forma conservadora).
+A conversão de custos em dólar (USD) para real (BRL) utiliza uma **cotação fixa de referência de R$ 5,40/USD**, definida em 21 set. 2026 como premissa de planejamento para eliminar volatilidade cambial nos cálculos (ver detalhes nas *Tabelas de Referência de Preços dos Fornecedores e Câmbio* do plano de negócios).
+
+Estimativa para um projeto de referência (pequena empresa, 40 horas de serviço): R$ 480,00 de infraestrutura e licenças (preços de fornecedores em USD convertidos à taxa fixa de R$ 5,40; detalhamento nas tabelas de referência do plano de negócios).
 
 ```
 Custo variável unitário = R$ 480,00 / 40 h = R$ 12,00 por hora
 ```
+
+> **Nota:** O valor de R$ 12,00/h é conservador (≈50% do custo variável estimado bruto de ~R$ 24,00/h), proporcionando margem de segurança para variação de escopo e economia de escala em projetos maiores. Ver seção *Custos de Infraestrutura Cloud Estimados para Projeto de Referência* no plano de negócios.
 
 ### 3.3.5 Custo unitário total (CUT)
 
@@ -252,8 +256,28 @@ Distribuição **direta**. A ConfiNuvem presta o serviço sem intermediários, d
 
 AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD). Fiscalização e nova agenda regulatória em 2026. In: SECUREPRIVACY. *LGPD conformidade*: guia completo 2026. Disponível em: <https://secureprivacy.ai/pt/blog/lgpd-conformidade-guia-completo-2026>. Acesso em: 21 set. 2026.
 
+ACRONIS. *Acronis Cyber Protect*: purchasing. Disponível em: <https://acronis.com/ru-ru/business/backup/purchasing>. Acesso em: 21 set. 2026.
+
+AMAZON WEB SERVICES. *AWS Database Migration Service*: pricing. Disponível em: <https://aws.amazon.com/dms/pricing/>. Acesso em: 21 set. 2026.
+
+AMAZON WEB SERVICES. *Amazon EC2*: pricing. Disponível em: <https://aws.amazon.com/ec2/pricing/>. Acesso em: 21 set. 2026.
+
+AMAZON WEB SERVICES. *Amazon S3*: pricing. Disponível em: <https://aws.amazon.com/s3/pricing/>. Acesso em: 21 set. 2026.
+
+GOOGLE CLOUD. *Migration Center*: cloud migration planning and assessment. Disponível em: <https://cloud.google.com/migration-center>. Acesso em: 21 set. 2026.
+
+GOOGLE CLOUD. *Compute Engine*: pricing. Disponível em: <https://cloud.google.com/compute/pricing>. Acesso em: 21 set. 2026.
+
+GOOGLE CLOUD. *Cloud Storage*: pricing. Disponível em: <https://cloud.google.com/storage/pricing>. Acesso em: 21 set. 2026.
+
+HASHICORP. *Vault*: pricing. Disponível em: <https://www.hashicorp.com/products/vault/pricing>. Acesso em: 21 set. 2026.
+
 NEON. *Pricing*. Disponível em: <https://neon.tech/pricing>. Acesso em: 21 set. 2026.
 
 STARTUPS.COM.BR. Menos dívida, mais estratégia: a revolução silenciosa das PMEs e startups brasileiras. Disponível em: <https://startups.com.br/artigo/menos-divida-mais-estrategia-a-revolucao-silenciosa-das-pmes-e-startups-brasileiras/>. Acesso em: 21 set. 2026.
 
 SUPABASE. *Pricing*. Disponível em: <https://supabase.com/pricing>. Acesso em: 21 set. 2026.
+
+THALES GROUP. *CipherTrust*: enterprise data encryption solutions. Disponível em: <https://cpl.thalesgroup.com/encryption>. Acesso em: 21 set. 2026.
+
+VEEAM SOFTWARE. *Veeam pricing*. Disponível em: <https://www.veeam.com/pricing.html>. Acesso em: 21 set. 2026.
