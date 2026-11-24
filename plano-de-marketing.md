@@ -36,7 +36,7 @@ Logomarca: nuvem azul com símbolo de verificação (segurança e confiança) e 
 
 ### 3.1.4 Slogan
 
-**"Confiança na nuvem"**
+"Confiança na nuvem"
 
 ## 3.2 Descrição dos produtos/serviços
 
@@ -57,12 +57,14 @@ A ConfiNuvem oferece um **portfólio de serviços individualizados** que podem s
 ### 3.2.2 Detalhamento dos serviços especializados (1–4)
 
 #### 1. Diagnóstico ConfiNuvem (Avaliação)
+
 - **Escopo:** Análise de inventário de dados, volumetria, requisitos de segurança, conformidade LGPD, maturidade cloud e riscos.
 - **Entregáveis:** Relatório em PDF (10–15 páginas), mapa de calor de riscos, estimativa de esforço e custo para migração.
 - **Duração típica:** 4–8 horas.
 - **Precificação:** Gratuita como ação de geração de leads (seção 3.5); avulsa a R$ 58,49/h se contratada isoladamente.
 
 #### 2. Plano de Migração ConfiNuvem (Planejamento)
+
 - **Escopo:** Definição de arquitetura alvo (Google Cloud, AWS, Supabase, NeonDB), seleção de ferramentas de segurança e backup, cronograma detalhado (Gantt), TCO estimado, plano de rollback, matriz de riscos.
 - **Entregáveis:** Documento técnico (20–30 páginas), cronograma, orçamento detalhado, matriz de riscos.
 - **Duração típica:** 8–16 horas.
@@ -70,6 +72,7 @@ A ConfiNuvem oferece um **portfólio de serviços individualizados** que podem s
 - **Requer:** Diagnóstico prévio (pode ser fornecido pelo cliente ou contratado à parte).
 
 #### 3. Migração ConfiNuvem (Execução)
+
 - **Escopo:** Provisionamento de infraestrutura, migração de bancos de dados e documentos, validação de integridade, cutover planejado, testes de aceitação.
 - **Entregáveis:** Ambiente em produção, relatório de migração, checklist de validação, credenciais e acessos documentados.
 - **Duração típica:** 20–80 horas (conforme volumetria e complexidade).
@@ -77,6 +80,7 @@ A ConfiNuvem oferece um **portfólio de serviços individualizados** que podem s
 - **Requer:** Plano de Migração aprovado.
 
 #### 4. Trilha ConfiNuvem (Capacitação)
+
 - **Escopo:** Segurança da informação (senhas, phishing, LGPD), operação diária (backup, monitoramento, HashiCorp Vault), boas práticas de cloud.
 - **Entregáveis:** Sessões de treinamento (remoto ou presencial), material didático (PDF/vídeo), certificado de conclusão por participante.
 - **Duração típica:** 4–16 horas (conforme número de turmas e profundidade).
@@ -121,7 +125,7 @@ A contratação conjunta dos quatro serviços especializados (Avaliação + Plan
 └─────────────────┘     └──────────────────────┘
    (opcional,            (recorrente, independente
     recomendada)           — pode vir sem migração)
-```
+```text
 
 ### 3.2.5 Diferenciais frente aos concorrentes
 
@@ -141,9 +145,9 @@ Diretriz **conservadora e de mínimo custo inicial**: operação 100% remota (ho
 
 Cada integrante dedica 6 horas diárias durante 20 dias úteis por mês (120 h mensais; 480 h no total).
 
-```
+```text
 Integrantes x horas x dias no mês x 0,7 = 4 x 6 x 20 x 0,7 = 336 horas produtivas/mês
-```
+```text
 
 ### 3.3.2 Custos fixos mensais
 
@@ -173,9 +177,9 @@ Integrantes x horas x dias no mês x 0,7 = 4 x 6 x 20 x 0,7 = 336 horas produtiv
 
 ### 3.3.3 Custo fixo unitário
 
-```
+```text
 Custo fixo total / capacidade produtiva = R$ 8.307,24 / 336 h = R$ 24,72 por hora
-```
+```text
 
 ### 3.3.4 Custo variável
 
@@ -184,6 +188,7 @@ Custos que crescem com o volume de projetos: infraestrutura de homologação e a
 A conversão de custos em dólar (USD) para real (BRL) utiliza uma **cotação fixa de referência de R$ 5,40/USD**, definida em 21 set. 2026 como premissa de planejamento para eliminar volatilidade cambial nos cálculos (ver detalhes nas *Tabelas de Referência de Preços dos Fornecedores e Câmbio* do plano de negócios).
 
 A **classificação e rateio dos custos das ferramentas** segue a metodologia documentada no plano de negócios (seção *Classificação de Custos das Ferramentas e Metodologia de Rateio*), que distingue:
+
 - **Custos Fixos Compartilhados (FC):** Rateados no custo fixo unitário (R$ 24,72/h) — ex.: cluster Vault base, licenças internas.
 - **Custos Variáveis por Cliente — Projeto (VC-P):** Incluídos no custo variável unitário adotado (R$ 16,22/h) — ex.: Acronis/Vault por cliente durante migração, infraestrutura temporária (PT).
 - **Custos Variáveis por Cliente — Recorrente (VC-R):** Base das faixas do ConfiNuvem Care (MRR) — ex.: Acronis/Vault/Monitoramento por faixa.
@@ -193,18 +198,18 @@ Esta separação evita dupla contabilização: custos fixos não entram no vari�
 
 Estimativa para um projeto de referência (pequena empresa, 40 horas de serviço): R$ 1.297,73 de infraestrutura e licenças, incluindo uma licença HCP Vault por mês e um cluster Small Essentials ativo por 40 horas (preços em USD convertidos à taxa de R$ 5,40; detalhamento no plano de negócios).
 
-```
+```text
 Custo variável bruto = R$ 1.297,73 / 40 h = R$ 32,44 por hora
 Custo variável unitário adotado = 50% × R$ 32,44 ≈ R$ 16,22 por hora
-```
+```text
 
 > **Nota:** O valor adotado de R$ 16,22/h é conservador (≈50% do custo variável estimado bruto de R$ 32,44/h), proporcionando margem para variação de escopo e economia de escala em projetos maiores. Ver seção *Custos de Infraestrutura Cloud Estimados para Projeto de Referência* e *Classificação de Custos das Ferramentas e Metodologia de Rateio* no plano de negócios.
 
 ### 3.3.5 Custo unitário total (CUT)
 
-```
+```text
 CUT = custo fixo unitário + custo variável unitário = R$ 24,72 + R$ 16,22 = R$ 40,94 por hora
-```
+```text
 
 ### 3.3.6 Fator de formação do preço e margem-alvo
 
@@ -216,18 +221,18 @@ CUT = custo fixo unitário + custo variável unitário = R$ 24,72 + R$ 16,22 = R
 | Investimentos (5–10%) | 5 |
 | **Total** | **30** |
 
-```
+```text
 Fator de formação do preço = 100 / (100 - 30) = 100 / 70 = 1,4286
 Preço = custo unitário ÷ 0,70
-```
+```text
 
 O fator preserva 30% do preço de venda para os componentes listados. Portanto, representa margem-alvo sobre o preço, e não acréscimo de 30% sobre o custo.
 
 ### 3.3.7 Preço de venda da hora de serviço (básica)
 
-```
+```text
 CUT ÷ 0,70 = R$ 40,94 ÷ 0,70 = R$ 58,49 por hora
-```
+```text
 
 ### 3.3.8 Precificação por serviço especializado
 
@@ -241,7 +246,7 @@ A hora de serviços especializados (R$ 58,49/h) é a base para os serviços 1–
 | **4. Trilha ConfiNuvem (Capacitação)** | 4–16 h | R$ 233,96–935,84 |
 
 > **Observação:** Valores são estimativas para planejamento. Orçamento formal emitido após Diagnóstico (serviço 1), considerando volumetria, complexidade, número de bancos/documentos e requisitos de segurança do cliente.
-
+>
 > **Serviço 5 (ConfiNuvem Care):** Precificação própria por faixas mensais (MRR), distinta dos serviços especializados por hora. Ver seção 3.6.
 
 ## 3.4 Estratégia de distribuição
@@ -287,6 +292,7 @@ O **ConfiNuvem Care** é a gestão proativa contínua do ambiente cloud do clien
 | **Governança de custos** | Tagging, orçamentos, alertas de anomalia de gasto cloud (FinOps básico) | Configuração e relatório mensal de otimização |
 
 > **Fora do escopo (não incluído no acesso mensal):**
+>
 > - Migração de novos sistemas/bancos (serviço 3 — projeto à parte)
 > - Capacitação de novas turmas (serviço 4 — projeto/hora à parte)
 > - Desenvolvimento de automações customizadas além do padrão
@@ -312,11 +318,13 @@ O cálculo separa os **custos variáveis recorrentes por cliente (VC-R)** da **p
 ### 3.6.3 Metodologia de precificação escolhida: Custos por Faixa + Margem-alvo
 
 A equipe escolheu a metodologia **"Custos variáveis por faixa + rateio de custos compartilhados + margem-alvo de 30% sobre o preço"** em vez de:
+
 - Custo por hora (inadequado: serviço é contínuo, não por projeto)
 - Rateio uniforme de todos os custos fixos sem considerar a capacidade consumida por cada faixa
 - Precificação 100% personalizada por cliente (complexa, difícil de vender/gerir)
 
 **Justificativa da escolha:**
+
 1. **Transparência:** Cliente sabe exatamente o que cada faixa inclui (estações, clientes Vault, nível de monitoramento, horas de suporte)
 2. **Escalabilidade:** Custos diretos (Acronis, Vault, Monitoramento) escalam linearmente com a faixa; suporte escala em blocos de horas
 3. **Simplicidade operacional:** 3 faixas padronizadas (Básico/Pro/Enterprise) cobrem 90%+ dos perfis de PME
@@ -347,16 +355,17 @@ A equipe escolheu a metodologia **"Custos variáveis por faixa + rateio de custo
 | **Preço de referência mensal (MRR)** | **R$ 10.547,88** | **R$ 12.368,66** | **R$ 17.531,10** |
 
 > Os preços são resultados matemáticos das premissas da tabela, não uma validação de preço de mercado. Tributos sobre faturamento, variações cambiais e outras despesas não incluídas devem ser avaliados antes de oferecer esses valores a clientes. O rateio de R$ 24,72/h já incorpora os custos fixos compartilhados; não se deve somá-los novamente. A equipe deve controlar que as horas atribuídas aos serviços não excedam as 336 h produtivas mensais. Para Vault, o cálculo presume um cluster Small Essentials por assinatura Care, ativo 730 h/mês, além da tarifa por cliente-produto.
-
+>
 > **Fórmula reproduzível para cada faixa:**
-> ```
+>
+> ```text
 > Preço da faixa = (Custo Acronis + Custo Vault + Custo Monitoramento + Custo Equipe Alocado) ÷ 0,70
 > Onde:
 > Custo Acronis = estações × US$ 7,08 (estimativa) × R$ 5,40
 > Custo Vault = (clientes-produto × US$ 72,92 + 1 cluster × US$ 1,57799/h × 730 h) × R$ 5,40
 > Custo Monitoramento = estimativa por nível de serviço
 > Custo Equipe Alocado = horas/semana × 4,33 × R$ 24,72
-> ```
+> ```text
 
 ### 3.6.5 Separação estrita dos modelos (Sem confusão de custos)
 

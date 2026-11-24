@@ -17,8 +17,10 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 ## Catálogo de Serviços — Escopo e Entregáveis
 
 ### 1. Diagnóstico ConfiNuvem (Avaliação)
+
 **Escopo:** Levantamento de inventário (bancos, documentos, sistemas), volumetria, análise de riscos de segurança, verificação de conformidade LGPD/ANPD, avaliação de maturidade cloud, identificação de dependências técnicas.
 **Entregáveis:**
+
 - Relatório de Diagnóstico (PDF, 10–15 páginas)
 - Mapa de calor de riscos (crítico/alto/médio/baixo)
 - Estimativa de esforço (horas) e investimento (R$) para migração
@@ -27,8 +29,10 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 **Precificação:** Gratuito (ação comercial — seção 3.5 do plano de marketing) ou R$ 58,49/h avulso.
 
 ### 2. Plano de Migração ConfiNuvem (Planejamento)
+
 **Escopo:** Definição de arquitetura alvo (Google Cloud, AWS, Supabase, NeonDB), seleção de ferramentas de segurança (Acronis, HashiCorp Vault) e monitoramento, elaboração de cronograma detalhado (Gantt), cálculo de TCO (Total Cost of Ownership), plano de rollback, matriz de riscos e mitigações, definição de janelas de cutover.
 **Entregáveis:**
+
 - Documento de Planejamento de Migração (PDF, 20–30 páginas)
 - Cronograma Gantt com marcos e responsáveis
 - Orçamento detalhado por fase e recurso
@@ -39,8 +43,10 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 **Requer:** Diagnóstico prévio (serviço 1 ou equivalente fornecido pelo cliente).
 
 ### 3. Migração ConfiNuvem (Execução)
+
 **Escopo:** Provisionamento de infraestrutura no provedor escolhido, configuração de segurança (VPC, IAM, criptografia), migração de bancos de dados (dump/restore, replicação, CDC), migração de documentos/arquivos (transferência validada), validação de integridade e performance, cutover planejado com janela de rollback, testes de aceitação (UAT) com o cliente.
 **Entregáveis:**
+
 - Ambiente em produção no provedor cloud
 - Relatório de Execução de Migração (PDF)
 - Checklist de Validação (itens testados, resultados, assinaturas)
@@ -51,8 +57,10 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 **Requer:** Plano de Migração aprovado (serviço 2).
 
 ### 4. Trilha ConfiNuvem (Capacitação)
+
 **Escopo:** Treinamento em segurança da informação (gestão de senhas, phishing, engenharia social, noções de LGPD/ANPD), operação diária do ambiente cloud (console do provedor, monitoramento básico, backup/restore Acronis, gerenciamento de segredos no Vault), boas práticas de governança e custos (tagging, orçamentos, alertas).
 **Entregáveis:**
+
 - Sessões de treinamento (remoto via videoconferência ou presencial)
 - Material didático: apostila PDF + vídeos curtos (5–10 min cada)
 - Certificado de Conclusão "Trilha ConfiNuvem" por participante
@@ -62,6 +70,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 **Modalidades:** Inclusa no pacote, avulsa para equipe do cliente, ou recorrente para onboarding de novos colaboradores.
 
 ### 5. ConfiNuvem Care (Gestão Contínua / Managed Services)
+
 **Escopo:** Gestão proativa do ambiente cloud do cliente pós-migração (ou de ambiente existente).
 **Entregáveis e SLA por faixa:** Ver seção 3.6 do plano de marketing (tabelas de faixas Básico/Pro/Enterprise).
 **Modelo:** Recorrente mensal (MRR), 3 faixas de preço.
@@ -86,30 +95,35 @@ flowchart TD
 ### Detalhamento por etapa (Pacote Integrado)
 
 #### Etapa 1 — Avaliação (Diagnóstico ConfiNuvem)
+
 - **Entrada:** Acesso a inventário parcial, entrevistas com stakeholders, acesso read-only a sistemas (se houver).
 - **Atividades:** Inventário técnico, volumetria, análise de segurança, LGPD, maturidade cloud, dependências.
 - **Saída:** Relatório de Diagnóstico + Mapa de Riscos + Estimativa.
 - **Critério de aceite:** Cliente aprova relatório e autoriza (ou não) continuidade.
 
 #### Etapa 2 — Planejamento (Plano de Migração ConfiNuvem)
+
 - **Entrada:** Relatório de Diagnóstico aprovado.
 - **Atividades:** Arquitetura alvo, ferramentas, cronograma Gantt, TCO, rollback, matriz de riscos.
 - **Saída:** Documento de Planejamento + Cronograma + Orçamento + Matriz de Riscos.
 - **Critério de aceite:** Cliente aprova plano e orçamento; assina ordem de execução.
 
 #### Etapa 3 — Execução (Migração ConfiNuvem)
+
 - **Entrada:** Plano aprovado, credenciais de acesso, janelas de manutenção acordadas.
 - **Atividades:** Provisionamento, configuração segurança, migração dados/bancos, validação, cutover, UAT.
 - **Saída:** Ambiente em produção + Relatório de Migração + Checklist + Credenciais.
 - **Critério de aceite:** Checklist de validação 100% verde; cliente assina termo de recebimento.
 
 #### Etapa 4 — Capacitação (Trilha ConfiNuvem)
+
 - **Entrada:** Ambiente em produção, equipe do cliente indicada.
 - **Atividades:** Agendamento turmas, condução treinamentos, entrega material, aplicação quiz, emissão certificados.
 - **Saída:** Material didático (PDF/vídeo) + Certificados + Relatório de aproveitamento.
 - **Critério de aceite:** 80%+ dos participantes com aprovação no quiz; material entregue.
 
 #### Etapa 5 — Gestão Contínua (ConfiNuvem Care) — Opcional
+
 - **Entrada:** Contrato de gestão assinado, acesso ao ambiente.
 - **Atividades:** Onboarding (inventário, configuração agentes), operação contínua (backup, Vault, monitoramento, suporte, manutenção, relatórios).
 - **Saída:** Dashboard mensal + Relatórios trimestrais + Atendimento SLA.

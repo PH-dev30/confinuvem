@@ -103,6 +103,7 @@ Esta seção documenta as premissas de custo dos fornecedores utilizados nos cá
 \* **Preço (BRL)** = Preço (USD) × 5,40. Valores arredondados a duas casas decimais.
 
 > **Legenda de Tipo de Preço:**
+>
 > - **Fixo (mensal/anual):** Valor contratual fixo no período, independente de uso.
 > - **Variável por consumo:** Cobrado conforme uso real (horas, GB, requests, etc.).
 > - **Variável por cliente/recurso:** Escala com número de clientes, nós, estações, etc.
@@ -232,13 +233,13 @@ A equipe definiu **precificação padronizada por faixas** (modelo híbrido) com
 |----------|----------------------|---------------------|
 | Fixo Compartilhado (FC) | Custo fixo total R$ 8.307,24/mês → Custo fixo unitário R$ 24,72/h | Rateado em 336h produtivas |
 | Variável por Cliente — Projeto (VC-P) | Custo variável unitário adotado R$ 16,22/h (projetos de migração) | Base: R$ 1.297,73/40h de custo bruto de referência |
-| Variável por Cliente — Recorrente (VC-R) | Base de custo das faixas do ConfiNuvem Care (Básico ~R$ 1.154, Pro ~R$ 2.416, Enterprise ~R$ 6.006) | Calculado por faixa explicitamente |
+| Variável por Cliente — Recorrente (VC-R) | Custos recorrentes sem equipe: Básico R$ 6.955,36; Pro R$ 7.587,68; Enterprise R$ 10.131,02 | Calculado por faixa explicitamente |
 | Projeto Temporário (PT) | Incluso no VC unitário adotado R$ 16,22/h (projetos) | Estimado conservadoramente |
 | Misto (MX) | Dividido: base no FC, por cliente no VC-R | Conforme tabela de classificação |
 
 ---
 
-## Análise SWOT
+## Referências de preços dos fornecedores
 
 - ACRONIS. *Cyber Platform*: pricing and licensing for service providers. Disponível em: <https://www.acronis.com/en/msp/pricing/>. Acesso em: 23 nov. 2026.
 - AMAZON WEB SERVICES. *AWS Database Migration Service*: pricing. Disponível em: <https://aws.amazon.com/dms/pricing/>.
@@ -274,10 +275,10 @@ Baseado no Protocolo de Migração e correções:
 - **Who (Quem):** Equipe de serviços especializados, fornecedores Google e AWS, funcionários internos (capacitação).
 - **How (Como):**
     1. **Diagnóstico (Avaliação):** Análise de inventário, volumetria, riscos, LGPD, maturidade cloud. Entregável: relatório + mapa de riscos + estimativa. (Gratuito como lead, ou avulso).
-  2. **Planejamento:** Arquitetura alvo, ferramentas, cronograma Gantt, TCO, rollback, matriz de riscos. Entregável: documento técnico + orçamento. (Requer Diagnóstico).
-  3. **Execução (Migração):** Provisionamento, migração dados/bancos, validação, cutover, testes. Entregável: ambiente em produção + relatório + checklist. (Requer Planejamento).
-  4. **Capacitação (Trilha ConfiNuvem):** Segurança, operação, boas práticas. Entregável: treinamento + material didático + certificado. (Opcional, recomendada pós-execução).
-  5. **Gestão Contínua (ConfiNuvem Care):** Backup gerido, Vault gerido, monitoramento/SIEM, suporte N1/N2, manutenção, relatórios compliance. Modelo: mensal recorrente 3 faixas (Básico/Pro/Enterprise). (Independente, pode vir sem migração).
+    2. **Planejamento:** Arquitetura alvo, ferramentas, cronograma Gantt, TCO, rollback, matriz de riscos. Entregável: documento técnico + orçamento. (Requer Diagnóstico).
+    3. **Execução (Migração):** Provisionamento, migração dados/bancos, validação, cutover, testes. Entregável: ambiente em produção + relatório + checklist. (Requer Planejamento).
+    4. **Capacitação (Trilha ConfiNuvem):** Segurança, operação, boas práticas. Entregável: treinamento + material didático + certificado. (Opcional, recomendada pós-execução).
+    5. **Gestão Contínua (ConfiNuvem Care):** Backup gerido, Vault gerido, monitoramento/SIEM, suporte N1/N2, manutenção, relatórios compliance. Modelo: mensal recorrente 3 faixas (Básico/Pro/Enterprise). (Independente, pode vir sem migração).
 - **How much (Quanto):** Orçamento interno da empresa; **dois fluxos de receita**: (a) projetos de serviços especializados por hora (R$ 58,49/h, capacidade total de 336 h/mês compartilhada entre projetos e Care) e (b) receita recorrente mensal de referência do ConfiNuvem Care (Básico R$ 10.547,88; Pro R$ 12.368,66; Enterprise R$ 17.531,10/mês), sujeita a cotação e validação do consumo. Custo fixo mensal estimado de R$ 8.307,24 (administrativas R$ 710,00; marketing R$ 400,00; pró-labore de 4 sócios a R$ 1.621,00 mais INSS de 11%, R$ 7.197,24). Custos variáveis de projetos (infra temporária, licenças por cliente) e custos de gestão contínua (licenças Acronis/Vault, monitoramento) segregados por serviço. Detalhes em [plano-de-marketing.md](plano-de-marketing.md) (seções 3.3 e 3.6).
 
 ## Referências bibliográficas
