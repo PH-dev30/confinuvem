@@ -3,5 +3,6 @@
 - Sempre que for fazer alterações, use uma branch separada da main.
 - As novas branches são criadas usando a lógica do trunk based development.
 - Siga as convenções de templates de issue, PR e documentação do repositório.
+- Ao trabalhar em uma issue ou PR, certifique-se de que esteja atribuída à conta do usuário solicitante ou, se o agente estiver atuando de forma 100% autônoma, à conta do agente. Se não estiver, atribua-a antes de prosseguir.
 - Não use squash para o merge.
 - Use o gh no terminal para fazer operações no repositório.
