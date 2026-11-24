@@ -1,3 +1,5 @@
+# Protocolo de Migração e Atividades Chave
+
 ## Visão Geral
 
 Consultoria para migração de bancos de dados físicos e documentos internos para nuvem (Google, AWS). Foco em segurança, confiabilidade, redundância e suporte pós-migração. Abordagem integrada como NeonDB/Supabase, com capacitação de equipes.
