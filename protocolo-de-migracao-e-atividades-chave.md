@@ -24,7 +24,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Estimativa de esforço (horas) e investimento (R$) para migração
 - Recomendação de provedor e arquitetura alvo preliminar
 **Duração:** 4–8 horas
-**Precificação:** Gratuito (ação comercial — seção 3.5 do plano de marketing) ou R$ 52,46/h avulso.
+**Precificação:** Gratuito (ação comercial — seção 3.5 do plano de marketing) ou R$ 58,49/h avulso.
 
 ### 2. Plano de Migração ConfiNuvem (Planejamento)
 **Escopo:** Definição de arquitetura alvo (Google Cloud, AWS, Supabase, NeonDB), seleção de ferramentas de segurança (Acronis, HashiCorp Vault) e monitoramento, elaboração de cronograma detalhado (Gantt), cálculo de TCO (Total Cost of Ownership), plano de rollback, matriz de riscos e mitigações, definição de janelas de cutover.
@@ -35,7 +35,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Matriz de riscos (probabilidade × impacto × mitigação)
 - Arquitetura alvo (diagrama + descrição)
 **Duração:** 8–16 horas
-**Precificação:** R$ 52,46/hora (serviços especializados).
+**Precificação:** R$ 58,49/hora (serviços especializados).
 **Requer:** Diagnóstico prévio (serviço 1 ou equivalente fornecido pelo cliente).
 
 ### 3. Migração ConfiNuvem (Execução)
@@ -47,7 +47,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Credenciais, acessos e documentação de operação básica
 - Guia de rollback (se necessário)
 **Duração:** 20–80 horas (conforme volumetria, número de bancos, complexidade)
-**Precificação:** R$ 52,46/hora (serviços especializados).
+**Precificação:** R$ 58,49/hora (serviços especializados).
 **Requer:** Plano de Migração aprovado (serviço 2).
 
 ### 4. Trilha ConfiNuvem (Capacitação)
@@ -58,7 +58,7 @@ A ConfiNuvem oferece um **portfólio modular de 5 serviços** para migração, m
 - Certificado de Conclusão "Trilha ConfiNuvem" por participante
 - Avaliação de conhecimento (quiz) com relatório para gestão
 **Duração:** 4–16 horas (conforme número de turmas, profundidade e tamanho da equipe)
-**Precificação:** R$ 52,46/hora (serviços especializados); incluída no Pacote Integrado.
+**Precificação:** R$ 58,49/hora (serviços especializados); incluída no Pacote Integrado.
 **Modalidades:** Inclusa no pacote, avulsa para equipe do cliente, ou recorrente para onboarding de novos colaboradores.
 
 ### 5. ConfiNuvem Care (Gestão Contínua / Managed Services)
@@ -133,13 +133,13 @@ flowchart TD
 
 | Serviço | Modelo | Preço Base | Observação |
 |---------|--------|------------|------------|
-| 1. Diagnóstico ConfiNuvem | Hora / Gratuito (lead) | R$ 0 / R$ 52,46h | Gratuito = ação comercial |
-| 2. Plano de Migração | Projeto (hora) | R$ 52,46/h | 8–16 h típicas |
-| 3. Migração ConfiNuvem | Projeto (hora) | R$ 52,46/h | 20–80 h típicas |
-| 4. Trilha ConfiNuvem | Hora / Pacote | R$ 52,46/h | 4–16 h típicas |
-| 5. ConfiNuvem Care | Mensal (faixas) | Básico R$ 1.171 / Pro R$ 2.257 / Enterprise R$ 4.429 | MRR — ver seção 3.6 plano marketing |
-| **Pacote Integrado (1–4)** | Projeto (hora c/ desconto) | 10% desconto vs. avulso | ~36 h = ~R$ 1.890 |
-| **Pacote + Care 12m** | Misto | 15% desconto vs. avulso | ~R$ 25.890 |
+| 1. Diagnóstico ConfiNuvem | Hora / Gratuito (lead) | R$ 0 / R$ 58,49/h | Gratuito = ação comercial |
+| 2. Plano de Migração | Projeto (hora) | R$ 58,49/h | 8–16 h típicas |
+| 3. Migração ConfiNuvem | Projeto (hora) | R$ 58,49/h | 20–80 h típicas |
+| 4. Trilha ConfiNuvem | Hora / Pacote | R$ 58,49/h | 4–16 h típicas |
+| 5. ConfiNuvem Care | Mensal (faixas) | Básico R$ 10.547,88 / Pro R$ 12.368,66 / Enterprise R$ 17.531,10 | MRR de referência; depende das premissas da seção 3.6 do plano de marketing |
+| **Pacote Integrado (1–4)** | Projeto (hora c/ desconto) | 10% desconto vs. avulso | 36 h de referência = R$ 1.895,08 |
+| **Pacote + Care 12m** | Misto | 15% desconto sobre o total avulso | R$ 127.771,15, usando Care Pro |
 
 ---
 

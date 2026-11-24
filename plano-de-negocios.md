@@ -40,7 +40,7 @@ Empresas pequenas que possuem bancos de dados físicos e documentos internos e d
 | **2. Planejamento de Migração** | Guias técnicos genéricos; sem plano customizado por cliente | Guias de migração por origem (PostgreSQL, MySQL, etc.); sem TCO/rollback customizado | **Plano customizado** com arquitetura, cronograma Gantt, TCO, rollback, matriz de riscos |
 | **3. Execução da Migração** | Ferramentas de importação (CLI/API); suporte apenas em planos Enterprise | Ferramentas de importação; apoio de migração apenas no plano Enterprise (US$ 599+/mês) | **Execução assistida por consultores**; validação, cutover planejado, checklist, credenciais documentadas |
 | **4. Capacitação (Trilha)** | Documentação técnica; sem treinamento formal incluso | Documentação técnica; sem treinamento formal incluso | **Treinamento com certificado**, material didático (PDF/vídeo), sessões remoto/presencial, avulso ou no pacote |
-| **5. Gestão Contínua (Managed Services)** | Plataforma gerenciada pelo cliente; suporte por plano (comunidade a Enterprise) | Plataforma gerenciada pelo cliente; suporte por plano (comunidade a Enterprise) | **ConfiNuvem Care**: backup gerido (Acronis), Vault gerido, monitoramento/SIEM, suporte N1/N2 com SLA, relatórios compliance LGPD — 3 faixas de preço (R$ 1.171 a R$ 4.429/mês) |
+| **5. Gestão Contínua (Managed Services)** | Plataforma gerenciada pelo cliente; suporte por plano (comunidade a Enterprise) | Plataforma gerenciada pelo cliente; suporte por plano (comunidade a Enterprise) | **ConfiNuvem Care**: backup gerido (Acronis), Vault gerido, monitoramento/SIEM, suporte N1/N2 com SLA, relatórios compliance LGPD — 3 faixas de referência (R$ 10.547,88 a R$ 17.531,10/mês) |
 
 > **Resumo:** NeonDB e Supabase são **plataformas de banco de dados** (DBaaS) onde o cliente gerencia a migração e a operação. A ConfiNuvem é **serviços especializados + gestão especializada** que pode usar essas plataformas (ou Google/AWS) como infraestrutura, entregando serviço ponta a ponta com responsabilidade técnica e contratual.
 
@@ -50,7 +50,7 @@ Empresas pequenas que possuem bancos de dados físicos e documentos internos e d
 | --- | --- | --- | --- |
 | Acronis | Backup as a Service e proteção cibernética integrada (Cyber Protect) | A partir de US$ 85/ano por estação de trabalho | Virtual — acronis.com |
 | Google Cloud Migration Center | Plataforma de planejamento e execução de migração para nuvem (inventário, dependências, TCO) | Gratuita (cobra-se apenas a infraestrutura de destino usada) | Virtual — cloud.google.com/migration-center |
-| HashiCorp | Encriptação e gerenciamento de segredos (Vault) | A partir de US$ 450/mês (cluster dev) + US$ 72,92/cliente/mês | Virtual — hashicorp.com |
+| HashiCorp / IBM | Encriptação e gerenciamento de segredos (HCP Vault Dedicated) | US$ 72,92/cliente/mês + cluster cobrado por hora e tamanho | Virtual — ibm.com/products/hashicorp/pricing |
 | Veeam | Backup e replicação (Veeam Backup & Replication) | A partir de US$ 1.080/ano por instância (socket) | Virtual — veeam.com |
 | Thales | Criptografia de dados (CipherTrust) | Sob consulta comercial | Virtual — cpl.thalesgroup.com |
 | Amazon Web Services | Infraestrutura cloud (compute, storage, network, DMS) | Pay-as-you-go (conforme uso) | Virtual — aws.amazon.com |
@@ -80,10 +80,11 @@ Esta seção documenta as premissas de custo dos fornecedores utilizados nos cá
 
 | Fornecedor | Plano / Edição de Referência | Unidade de Cobrança | Preço (USD) | Preço (BRL)* | Tipo de Preço | Fonte / Data Consulta |
 |------------|------------------------------|---------------------|-------------|--------------|---------------|----------------------|
-| **Acronis** | Cyber Protect Cloud (MSP) | Por estação de trabalho / mês | US$ 7,08 | R$ 38,23 | Variável por consumo | acronis.com — 21 set. 2026 |
+| **Acronis** | Cyber Platform (antigo Cyber Protect Cloud, MSP) | Por workload ou GB, conforme contrato | US$ 7,08 estimados por estação/mês | R$ 38,23 estimados | Variável por consumo | Premissa de planejamento; cotação MSP necessária |
 | **Acronis** | Cyber Protect Home Office | Por dispositivo / ano | US$ 85,00 | R$ 459,00 | Fixo (anual) | acronis.com — 21 set. 2026 |
-| **HashiCorp** | Vault (HCP) — Cluster Dev | Por cluster / mês | US$ 450,00 | R$ 2.430,00 | Fixo (mensal) | hashicorp.com — 21 set. 2026 |
-| **HashiCorp** | Vault (HCP) — Cliente gerenciado | Por cliente / mês | US$ 72,92 | R$ 393,77 | Variável por cliente | hashicorp.com — 21 set. 2026 |
+| **HashiCorp / IBM** | HCP Vault Dedicated — Cluster extra-small Development | Por cluster / hora | US$ 0,61644 | R$ 3,33 | Variável por tempo ativo | PAYG IBM HashiCorp — consulta 23 nov. 2026 |
+| **HashiCorp / IBM** | HCP Vault Dedicated — Cluster Small Essentials | Por cluster / hora | US$ 1,57799 | R$ 8,52 | Variável por tempo ativo | PAYG IBM HashiCorp — consulta 23 nov. 2026 |
+| **HashiCorp / IBM** | HCP Vault Dedicated — Cliente | Por cliente / mês | US$ 72,92 | R$ 393,77 | Variável por cliente | PAYG IBM HashiCorp — consulta 23 nov. 2026 |
 | **HashiCorp** | Vault Enterprise (Self-hosted) | Por nó / ano | Sob consulta | — | Negociado | Contato comercial |
 | **Veeam** | Backup & Replication | Por socket / ano | US$ 1.080,00 | R$ 5.832,00 | Fixo (anual) | veeam.com — 21 set. 2026 |
 | **Veeam** | Data Platform (Universal License) | Por instância / ano | US$ 1.500,00 | R$ 8.100,00 | Fixo (anual) | veeam.com — 21 set. 2026 |
@@ -113,38 +114,38 @@ Esta seção documenta as premissas de custo dos fornecedores utilizados nos cá
 
 ### Custos de Infraestrutura Cloud Estimados para Projeto de Referência
 
-A tabela abaixo consolida uma estimativa de custos de infraestrutura temporária durante uma migração típica (pequena empresa, ~40h de serviço), usada no cálculo do **custo variável unitário (R$ 12,00/h)** da seção 3.3.4 do plano de marketing.
+A tabela abaixo consolida uma estimativa de custos de infraestrutura temporária durante uma migração típica (pequena empresa, ~40h de serviço), usada no cálculo do custo variável bruto e do **custo variável unitário adotado (R$ 16,22/h)** da seção 3.3.4 do plano de marketing.
 
 | Componente | Fornecedor | Qtd Estimada | Unitário (USD) | Unitário (BRL) | Total (BRL) | Observação |
 |------------|------------|--------------|----------------|----------------|-------------|------------|
 | Compute (migração + validação) | AWS / Google Cloud | 40 h | US$ 0,10/h | R$ 0,54/h | R$ 21,60 | Instâncias temporárias para dump/restore, CDC, testes |
 | Armazenamento temporário | AWS S3 / GCS | 500 GB × 1 mês | US$ 0,023/GB | R$ 0,124/GB | R$ 62,00 | Staging de dados durante migração |
 | Transferência de dados (egress) | AWS / Google Cloud | 200 GB | US$ 0,09/GB | R$ 0,486/GB | R$ 97,20 | Saída de dados para validação/cutover |
-| Licença Acronis (backup cliente) | Acronis | 10 estações × 1 mês | US$ 7,08/est. | R$ 38,23/est. | R$ 382,30 | Cyber Protect Cloud MSP |
-| Licença Vault (segredos cliente) | HashiCorp HCP | 1 cliente × 1 mês | US$ 72,92 | R$ 393,77 | R$ 393,77 | Cliente gerenciado no HCP |
-| **Subtotal estimado** | | | | | **R$ 956,87** | Arredondado para **R$ 960,00** no plano |
-| **Rateio por hora (40h)** | | | | | **R$ 24,00/h** | |
-| **Custo variável unitário adotado** | | | | | **R$ 12,00/h** | Valor conservador (50% do estimado) para margem de segurança |
+| Licença Acronis (backup cliente) | Acronis | 10 workloads × 1 mês | US$ 7,08/workload estimado | R$ 38,23/workload estimado | R$ 382,32 estimado | Premissa MSP; validar por cotação |
+| HCP Vault (segredos do projeto) | HashiCorp / IBM | 1 cliente-produto × 1 mês + cluster ativo por 40 h | US$ 72,92 + US$ 1,57799/h | R$ 393,77 + R$ 8,52/h | R$ 734,61 | Inclui tarifa mensal do cliente-produto e cluster Small Essentials por 40 h |
+| **Subtotal estimado** | | | | | **R$ 1.297,73** | Custo bruto do cenário de referência |
+| **Custo variável bruto por hora (40 h)** | | | | | **R$ 32,44/h** | Subtotal ÷ 40 h |
+| **Custo variável unitário adotado** | | | | | **R$ 16,22/h** | Aproximadamente 50% do custo bruto, como premissa conservadora |
 
-> **Nota:** O custo variável unitário de **R$ 12,00/h** (seção 3.3.4 do plano de marketing) foi definido de forma conservadora, considerando que nem todos os projetos demandam o conjunto completo acima e que há economia de escala em projetos maiores. O detalhamento acima demonstra a origem da estimativa de R$ 480,00 para 40h (R$ 12,00 × 40h).
+> **Nota:** O custo variável unitário adotado de **R$ 16,22/h** (seção 3.3.4 do plano de marketing) considera que nem todos os projetos demandam o conjunto completo acima e que pode haver economia de escala. A tabela explicita o cenário de referência e o período de uso de cada licença para manter separados os custos de projeto e o MRR do Care.
 
 ---
 
 ### Custos Recorrentes do ConfiNuvem Care (Gestão Contínua — MRR)
 
-Estes custos compõem a base de cálculo das faixas de preço do **ConfiNuvem Care** (seção 3.6 do plano de marketing: Básico R$ 1.171, Pro R$ 2.257, Enterprise R$ 4.429).
+Estes custos compõem a base de cálculo das faixas de preço do **ConfiNuvem Care** (seção 3.6 do plano de marketing).
 
 | Componente | Fornecedor | Escopo por Faixa | Custo Mensal Estimado (BRL) | Tipo |
 |------------|------------|------------------|----------------------------|------|
-| **Backup gerenciado (Acronis)** | Acronis Cyber Protect Cloud | Básico: 5 estações / Pro: 15 estações / Enterprise: 40 estações | Básico: R$ 191 / Pro: R$ 574 / Enterprise: R$ 1.529 | Variável por estação |
-| **Vault gerenciado (HashiCorp)** | HCP Vault — Cliente gerenciado | Básico: 1 cliente / Pro: 1 cliente / Enterprise: 3 clientes | Básico: R$ 394 / Pro: R$ 394 / Enterprise: R$ 1.181 | Variável por cliente |
+| **Backup gerenciado (Acronis)** | Acronis Cyber Platform (antigo Cyber Protect Cloud) | Básico: 5 estações / Pro: 15 estações / Enterprise: 40 estações | Básico: R$ 191,16 / Pro: R$ 573,48 / Enterprise: R$ 1.529,28 | Variável por workload; US$ 7,08 é estimativa pendente de cotação |
+| **Vault gerenciado (HCP)** | 1 cluster Small Essentials por assinatura + tarifa por cliente-produto | Básico: 1 / Pro: 1 / Enterprise: 3 clientes-produto | Básico: R$ 6.614,20 / Pro: R$ 6.614,20 / Enterprise: R$ 7.401,74 | Variável por cluster/hora e cliente/mês |
 | **Monitoramento / SIEM** | AWS CloudWatch / Google Cloud Monitoring + alertas | Básico: básico / Pro: avançado / Enterprise: 24×7 + SIEM | Básico: R$ 150 / Pro: R$ 400 / Enterprise: R$ 1.200 | Estimado (pay-as-you-go) |
-| **Suporte N1/N2 (equipe)** | Próprio (pró-labore rateado) | Básico: 4h/semana / Pro: 10h/semana / Enterprise: 20h/semana | Básico: R$ 419 / Pro: R$ 1.048 / Enterprise: R$ 2.096 | Rateio de capacidade |
+| **Equipe e custos compartilhados alocados** | Próprio (FC a R$ 24,72/h) | Básico: 4h/semana / Pro: 10h/semana / Enterprise: 20h/semana | Básico: R$ 428,15 / Pro: R$ 1.070,38 / Enterprise: R$ 2.140,75 | Rateio de capacidade |
 | **Manutenção / Patches / Otimizações** | Próprio (pró-labore rateado) | Incluído nas horas acima | Incluído | Rateio de capacidade |
 | **Relatórios compliance LGPD** | Próprio (pró-labore rateado) | Trimestral (todas faixas) | Rateado nas horas de suporte | Rateio de capacidade |
-| **Total Custo Direto Estimado (BRL/mês)** | | | **Básico: ~R$ 1.154 / Pro: ~R$ 2.416 / Enterprise: ~R$ 6.006** | |
+| **Custo mensal atribuído (BRL/mês)** | | | **Básico: R$ 7.383,51 / Pro: R$ 8.658,06 / Enterprise: R$ 12.271,77** | |
 
-> **Observação:** Os preços finais das faixas (Básico R$ 1.171, Pro R$ 2.257, Enterprise R$ 4.429) incorporam markup de 30% (taxa 1,4286) sobre o custo direto estimado, mais margem para impostos, risco cambial e investimentos. A faixa Enterprise tem custo direto superior ao preço final devido à alocação de capacidade dedicada; o equilíbrio ocorre no portfólio agregado.
+> **Observação:** Os preços de referência (Básico R$ 10.547,88, Pro R$ 12.368,66 e Enterprise R$ 17.531,10) são obtidos dividindo o custo mensal atribuído por 0,70. Eles dependem das premissas de consumo e licenciamento, em especial de um cluster HCP Vault Small Essentials ativo 730 horas por mês para cada assinatura Care, além das tarifas por cliente-produto.
 
 ---
 
@@ -156,13 +157,13 @@ Estes custos compõem a base de cálculo das faixas de preço do **ConfiNuvem Ca
 | Capacidade produtiva mensal | 336 h | Seção 3.3.1 (plano de marketing) |
 | Custo fixo total mensal | R$ 8.307,24 | Seção 3.3.2 (plano de marketing) |
 | Custo fixo unitário | R$ 24,72/h | Seção 3.3.3 (plano de marketing) |
-| Custo variável unitário (adotado) | R$ 12,00/h | Seção 3.3.4 (plano de marketing) |
-| CUT (Custo Unitário Total) | R$ 36,72/h | Seção 3.3.5 (plano de marketing) |
-| Taxa de markup | 30% (fator 1,4286) | Seção 3.3.6 (plano de marketing) |
-| Preço hora serviços especializados | R$ 52,46/h | Seção 3.3.7 (plano de marketing) |
-| ConfiNuvem Care — Básico | R$ 1.171/mês | Seção 3.6 (plano de marketing) |
-| ConfiNuvem Care — Pro | R$ 2.257/mês | Seção 3.6 (plano de marketing) |
-| ConfiNuvem Care — Enterprise | R$ 4.429/mês | Seção 3.6 (plano de marketing) |
+| Custo variável unitário (adotado) | R$ 16,22/h | Seção 3.3.4 (plano de marketing) |
+| CUT (Custo Unitário Total) | R$ 40,94/h | Seção 3.3.5 (plano de marketing) |
+| Margem-alvo no preço de venda | 30% (fator 1,4286) | Seção 3.3.6 (plano de marketing) |
+| Preço hora serviços especializados | R$ 58,49/h | Seção 3.3.7 (plano de marketing) |
+| ConfiNuvem Care — Básico | R$ 10.547,88/mês | Seção 3.6 (plano de marketing) |
+| ConfiNuvem Care — Pro | R$ 12.368,66/mês | Seção 3.6 (plano de marketing) |
+| ConfiNuvem Care — Enterprise | R$ 17.531,10/mês | Seção 3.6 (plano de marketing) |
 
 ---
 
@@ -179,40 +180,40 @@ Esta seção estabelece a metodologia para classificar e atribuir os custos das 
 | Classificação | Definição | Critério de Atribuição | Exemplo de Tratamento Contábil |
 |---------------|-----------|------------------------|--------------------------------|
 | **Fixo Compartilhado (FC)** | Custo incorrido independentemente do número de clientes; beneficia toda a operação | Rateado entre todos os clientes/serviços via **custo fixo unitário** (R$ 24,72/h) | Licenças de plataforma da empresa, ferramentas internas, assinaturas base |
-| **Variável por Cliente (VC)** | Custo que só existe se houver o cliente; escala linear com cada cliente adicionado | Atribuído **diretamente** ao custo do cliente/projeto (entra no custo variável unitário R$ 12,00/h ou no MRR do Care) | Licenças por estação/cliente (Acronis, Vault gerenciado), consumo cloud do cliente |
-| **Misto (MX)** | Possui componente base fixo + componente variável por cliente/uso | Componente base → **Fixo Compartilhado**; Componente por cliente → **Variável por Cliente** | HashiCorp Vault HCP (cluster dev fixo + clientes variáveis), Monitoramento (base + alertas por cliente) |
+| **Variável por Cliente (VC)** | Custo que só existe se houver o cliente; escala linear com cada cliente adicionado | Atribuído **diretamente** ao custo do cliente/projeto (entra no custo variável unitário R$ 16,22/h ou no MRR do Care) | Licenças por workload/cliente (Acronis, Vault gerenciado), consumo cloud do cliente |
+| **Misto (MX)** | Possui componente base fixo + componente variável por cliente/uso | Componente base → **Fixo Compartilhado**; Componente por cliente → **Variável por Cliente** | Monitoramento (base + alertas por cliente), quando contratado com parcela compartilhada |
 | **Projeto Temporário (PT)** | Custo de infraestrutura existente apenas durante a execução de um projeto de migração | Atribuído **diretamente** ao projeto (custo variável de projeto) | Compute temporário, storage staging, egress de dados durante migração |
 
 ### Tabela de Classificação por Ferramenta/Fornecedor
 
 | Ferramenta / Fornecedor | Plano de Referência | Unidade de Cobrança | Classificação | Justificativa | Atribuição nos Cálculos |
 |-------------------------|---------------------|---------------------|---------------|---------------|-------------------------|
-| **Acronis Cyber Protect Cloud (MSP)** | MSP — por estação/mês | Por estação de trabalho | **Variável por Cliente (VC)** | Cada cliente tem suas estações; custo só existe com cliente ativo | Custo variável de projeto (migração) + MRR ConfiNuvem Care (gestão contínua) |
+| **Acronis Cyber Platform (MSP)** | Por workload ou GB conforme contrato | Por workload/mês ou GB | **Variável por Cliente (VC)** | Cada cliente tem seus workloads e consumo; tarifa depende do contrato | Custo variável de projeto (migração) + MRR ConfiNuvem Care (gestão contínua) |
 | **Acronis Cyber Protect Home Office** | Anual por dispositivo | Por dispositivo/ano | **Variável por Cliente (VC)** | Uso pontual em projetos específicos | Custo variável de projeto (se aplicável) |
-| **HashiCorp Vault HCP — Cluster Dev** | Cluster/mês | Por cluster | **Fixo Compartilhado (FC)** | Cluster base compartilhado pela ConfiNuvem para gerenciar segredos de todos os clientes | Rateado no custo fixo unitário (R$ 24,72/h) via "Licenças de software" R$ 150,00/mês |
-| **HashiCorp Vault HCP — Cliente Gerenciado** | Por cliente/mês | Por cliente | **Variável por Cliente (VC)** | Cada cliente gerenciado adiciona custo marginal direto | Custo variável de projeto + MRR ConfiNuvem Care |
+| **HCP Vault Dedicated — Cluster Small Essentials** | Por cluster/hora | Por cliente Care, ativo conforme uso | **Variável por Cliente (VC-R)** | Cada cliente Care tem um cluster de referência ativo; custo acompanha horas e tamanho | MRR ConfiNuvem Care (US$ 1,57799/h × 730 h × R$ 5,40) |
+| **HCP Vault Dedicated — Cliente** | Por cliente/mês | Por cliente Care | **Variável por Cliente (VC-R)** | Cada cliente gerenciado adiciona tarifa mensal | MRR ConfiNuvem Care (US$ 72,92 × R$ 5,40) |
 | **HashiCorp Vault Enterprise (Self-hosted)** | Por nó/ano | Por nó | **Misto (MX)** | Infraestrutura base (nós) fixa + escala com clientes | Base no FC; expansão por cliente no VC |
 | **Veeam Backup & Replication** | Por socket/ano | Por socket | **Fixo Compartilhado (FC)** | Licença da empresa para operação interna/backup próprio | Rateado no custo fixo unitário |
 | **Veeam Data Platform (Universal License)** | Por instância/ano | Por instância | **Variável por Cliente (VC)** | Se usado para backup gerenciado de cliente específico | MRR ConfiNuvem Care (componente backup) |
 | **Thales CipherTrust** | Por nó/ano (negociado) | Por nó | **Misto (MX)** | Base fixa + escala por cliente/volume | Base no FC; expansão no VC |
 | **Google Cloud Migration Center** | Gratuito | Por projeto | **Fixo Compartilhado (FC)** | Sem custo direto; ferramenta de planejamento interna | Incluso em "Licenças de software" (R$ 0) |
-| **Google Cloud Compute / Storage / Network** | Pay-as-you-go | Por hora / GB | **Projeto Temporário (PT)** / **Variável por Cliente (VC)** | Migração: PT (temporário); Care: VC (recorrente) | PT → custo variável unitário R$ 12/h; VC → MRR Care |
-| **AWS DMS / EC2 / S3** | Pay-as-you-go | Por hora / GB | **Projeto Temporário (PT)** / **Variável por Cliente (VC)** | Migração: PT; Care/operação: VC | PT → custo variável unitário R$ 12/h; VC → MRR Care |
+| **Google Cloud Compute / Storage / Network** | Pay-as-you-go | Por hora / GB | **Projeto Temporário (PT)** / **Variável por Cliente (VC)** | Migração: PT (temporário); Care: VC (recorrente) | PT → custo variável unitário R$ 16,22/h; VC → MRR Care |
+| **AWS DMS / EC2 / S3** | Pay-as-you-go | Por hora / GB | **Projeto Temporário (PT)** / **Variável por Cliente (VC)** | Migração: PT; Care/operação: VC | PT → custo variável unitário R$ 16,22/h; VC → MRR Care |
 | **Supabase / NeonDB (DBaaS)** | Plano fixo + uso | Por projeto/mês + consumo | **Variável por Cliente (VC)** | Cada cliente tem seu projeto/banco isolado | MRR ConfiNuvem Care (se incluso na gestão) ou repassado ao cliente |
 
 ### Metodologia de Rateio Decidida pela Equipe
 
 A equipe definiu **precificação padronizada por faixas** (modelo híbrido) como padrão, com as seguintes regras:
 
-1. **Custos Fixos Compartilhados (FC)** → Absorvidos pelo **custo fixo unitário (R$ 24,72/h)** que compõe a hora de serviços especializados (R$ 52,46/h). Não são cobrados separadamente do cliente.
+1. **Custos Fixos Compartilhados (FC)** → Rateados uma única vez pela capacidade produtiva total de 336 h/mês, usando o custo fixo unitário de R$ 24,72/h. As horas destinadas ao Care são retiradas da capacidade disponível para projetos; não podem ser cobradas nas duas linhas de serviço.
 
 2. **Custos Variáveis por Cliente (VC)** → Duas rotas:
-   - **Projetos de Migração (serviços 1–4)**: Incluídos no **custo variável unitário conservador de R$ 12,00/h** (já precificado na hora R$ 52,46/h). O cliente paga por hora de serviço; o custo de ferramentas por cliente é embutido.
-   - **ConfiNuvem Care (serviço 5 — MRR)**: Custos diretos de ferramentas por faixa (Acronis, Vault, Monitoramento) calculados explicitamente na **base de custo de cada faixa** (ver *Custos Recorrentes do ConfiNuvem Care* na seção anterior), sobre os quais se aplica o markup de 30%.
+   - **Projetos de Migração (serviços 1–4)**: Incluídos no **custo variável unitário conservador de R$ 16,22/h** (já precificado na hora R$ 58,49/h). O cliente paga por hora de serviço; o custo de ferramentas por cliente é embutido.
+   - **ConfiNuvem Care (serviço 5 — MRR)**: Custos variáveis recorrentes por faixa (Acronis estimado, cluster e clientes Vault, monitoramento) mais FC alocado pelas horas da equipe. Aplica-se a margem-alvo de 30% sobre o preço, dividindo o custo atribuído por 0,70.
 
-3. **Custos Mistos (MX)** → Componente base (ex: cluster Vault dev) → FC (rateado no fixo). Componente por cliente (ex: cliente gerenciado no HCP) → VC (atribuído ao cliente/faixa).
+3. **Custos Mistos (MX)** → Se houver custo-base compartilhado do fornecedor, alocá-lo pela capacidade usada; no cálculo atual do Care, o cluster Small Essentials é atribuído por cliente e por hora ativa, junto com a tarifa mensal por cliente.
 
-4. **Custos de Projeto Temporário (PT)** → Estimados no **custo variável unitário R$ 12,00/h** (base: projeto referência 40h = R$ 480). Valor conservador (≈50% do custo bruto estimado) para cobrir variação de escopo.
+4. **Custos de Projeto Temporário (PT)** → Estimados no **custo variável unitário R$ 16,22/h** (base: projeto de referência de 40 h, custo bruto de R$ 1.297,73). Valor adotado de aproximadamente 50% do cenário de referência para refletir variação de escopo e economia de escala.
 
 > **Decisão registrada:** A equipe optou por **precificação padronizada por faixas** (modelo híbrido) em vez de precificação 100% personalizada por cliente. Isso simplifica a venda, a gestão e a comunicação, mantendo a transparência: o cliente sabe exatamente o que está incluído em cada faixa do ConfiNuvem Care e na hora de serviço. Casos atípicos (clientes com volume muito acima da faixa) são tratados como exceção com orçamento customizado.
 
@@ -220,33 +221,33 @@ A equipe definiu **precificação padronizada por faixas** (modelo híbrido) com
 
 | Cálculo | Componentes Incluídos | Evita Dupla Contagem Porque... |
 |---------|----------------------|--------------------------------|
-| **Custo Fixo Unitário (R$ 24,72/h)** | FC apenas (cluster Vault base, Veeam licença própria, Migration Center, ferramentas internas, licenças software R$ 150/mês) | Não inclui custos que escalam por cliente (VC) |
-| **Custo Variável Unitário (R$ 12,00/h)** | PT (compute/storage/egress temporário) + VC de projeto (Acronis/Vault por cliente durante migração) | Não inclui FC (já no fixo); VC de projeto ≠ VC recorrente do Care |
-| **Preço Hora Serviços (R$ 52,46/h)** | CUT (36,72) × Markup 1,4286 | CUT = FC unitário + VC unitário; cada custo aparece uma única vez |
-| **MRR ConfiNuvem Care (por faixa)** | VC recorrente (Acronis/Vault/Monitoramento por faixa) + Rateio equipe (suporte/manutenção/compliance) × Markup | FC da empresa NÃO entra no custo do Care (já coberto pela hora de serviço); apenas custos diretamente atribuíveis à gestão contínua |
+| **Custo Fixo Unitário (R$ 24,72/h)** | FC apenas (Veeam licença própria, Migration Center, ferramentas internas, licenças software R$ 150/mês) | Não inclui custos que escalam por cliente (VC) |
+| **Custo Variável Unitário (R$ 16,22/h)** | PT (compute/storage/egress temporário) + VC de projeto (Acronis/Vault por cliente durante migração) | Não inclui FC (já no fixo); VC de projeto ≠ VC recorrente do Care |
+| **Preço Hora Serviços (R$ 58,49/h)** | CUT (R$ 40,94) ÷ 0,70 | CUT = FC unitário + VC unitário; cada custo aparece uma única vez |
+| **MRR ConfiNuvem Care (por faixa)** | VC recorrente (Acronis/Vault/monitoramento) + FC alocado à equipe; total ÷ 0,70 | O FC e as horas são alocados uma única vez entre Care e projetos; horas Care reduzem a capacidade para projetos |
 
 ### Resumo da Alocação por Natureza do Custo
 
 | Natureza | Onde Aparece no Plano | Valor de Referência |
 |----------|----------------------|---------------------|
 | Fixo Compartilhado (FC) | Custo fixo total R$ 8.307,24/mês → Custo fixo unitário R$ 24,72/h | Rateado em 336h produtivas |
-| Variável por Cliente — Projeto (VC-P) | Custo variável unitário R$ 12,00/h (projetos de migração) | Base: R$ 480/40h projeto referência |
+| Variável por Cliente — Projeto (VC-P) | Custo variável unitário adotado R$ 16,22/h (projetos de migração) | Base: R$ 1.297,73/40h de custo bruto de referência |
 | Variável por Cliente — Recorrente (VC-R) | Base de custo das faixas do ConfiNuvem Care (Básico ~R$ 1.154, Pro ~R$ 2.416, Enterprise ~R$ 6.006) | Calculado por faixa explicitamente |
-| Projeto Temporário (PT) | Incluso no VC unitário R$ 12,00/h (projetos) | Estimado conservadoramente |
+| Projeto Temporário (PT) | Incluso no VC unitário adotado R$ 16,22/h (projetos) | Estimado conservadoramente |
 | Misto (MX) | Dividido: base no FC, por cliente no VC-R | Conforme tabela de classificação |
 
 ---
 
 ## Análise SWOT
 
-- ACRONIS. *Acronis Cyber Protect*: purchasing. Disponível em: <https://acronis.com/ru-ru/business/backup/purchasing>.
+- ACRONIS. *Cyber Platform*: pricing and licensing for service providers. Disponível em: <https://www.acronis.com/en/msp/pricing/>. Acesso em: 23 nov. 2026.
 - AMAZON WEB SERVICES. *AWS Database Migration Service*: pricing. Disponível em: <https://aws.amazon.com/dms/pricing/>.
 - AMAZON WEB SERVICES. *Amazon EC2*: pricing. Disponível em: <https://aws.amazon.com/ec2/pricing/>.
 - AMAZON WEB SERVICES. *Amazon S3*: pricing. Disponível em: <https://aws.amazon.com/s3/pricing/>.
 - GOOGLE CLOUD. *Migration Center*: cloud migration planning and assessment. Disponível em: <https://cloud.google.com/migration-center>.
 - GOOGLE CLOUD. *Compute Engine*: pricing. Disponível em: <https://cloud.google.com/compute/pricing>.
 - GOOGLE CLOUD. *Cloud Storage*: pricing. Disponível em: <https://cloud.google.com/storage/pricing>.
-- HASHICORP. *Vault*: pricing. Disponível em: <https://www.hashicorp.com/products/vault/pricing>.
+- IBM. *HashiCorp Cloud Platform*: PAYG pricing. Disponível em: <https://www.ibm.com/products/hashicorp/pricing>. Acesso em: 23 nov. 2026.
 - NEON. *Pricing*. Disponível em: <https://neon.tech/pricing>.
 - SUPABASE. *Pricing*. Disponível em: <https://supabase.com/pricing>.
 - THALES GROUP. *CipherTrust*: enterprise data encryption solutions. Disponível em: <https://cpl.thalesgroup.com/encryption>.
@@ -266,7 +267,7 @@ A equipe definiu **precificação padronizada por faixas** (modelo híbrido) com
 
 Baseado no Protocolo de Migração e correções:
 
-- **What (O quê):** Portfólio de serviços cloud: (1) Diagnóstico ConfiNuvem (avaliação), (2) Plano de Migração ConfiNuvem (planejamento), (3) Migração ConfiNuvem (execução), (4) Trilha ConfiNuvem (capacitação), (5) ConfiNuvem Care (gestão contínua/Managed Services mensal). Contratos por serviço avulso ou Pacote Integrado com desconto. Dois fluxos de receita: projetos de serviços especializados (hora R$ 52,46) e recorrência mensal (faixas R$ 1.171 a R$ 4.429). Orçamento interno especificado. Remuneração via pró-labore.
+- **What (O quê):** Portfólio de serviços cloud: (1) Diagnóstico ConfiNuvem (avaliação), (2) Plano de Migração ConfiNuvem (planejamento), (3) Migração ConfiNuvem (execução), (4) Trilha ConfiNuvem (capacitação), (5) ConfiNuvem Care (gestão contínua/Managed Services mensal). Contratos por serviço avulso ou Pacote Integrado com desconto. Dois fluxos de receita: projetos de serviços especializados (hora R$ 58,49) e recorrência mensal de referência (Básico R$ 10.547,88; Pro R$ 12.368,66; Enterprise R$ 17.531,10), sujeitos a cotação e validação de consumo. Orçamento interno especificado. Remuneração via pró-labore.
 - **Why (Por quê):** Segurança, conformidade LGPD, confiabilidade e parceria contínua. Modelo modular permite ao cliente contratar apenas o necessário (ex.: só diagnóstico gratuito, ou só gestão contínua), com transparência de escopo, entregáveis e preço em cada etapa.
 - **Where (Onde):** Servidores online com mecanismos de segurança.
 - **When (Quando):** Conforme cronograma elaborado no planejamento.
@@ -277,11 +278,11 @@ Baseado no Protocolo de Migração e correções:
   3. **Execução (Migração):** Provisionamento, migração dados/bancos, validação, cutover, testes. Entregável: ambiente em produção + relatório + checklist. (Requer Planejamento).
   4. **Capacitação (Trilha ConfiNuvem):** Segurança, operação, boas práticas. Entregável: treinamento + material didático + certificado. (Opcional, recomendada pós-execução).
   5. **Gestão Contínua (ConfiNuvem Care):** Backup gerido, Vault gerido, monitoramento/SIEM, suporte N1/N2, manutenção, relatórios compliance. Modelo: mensal recorrente 3 faixas (Básico/Pro/Enterprise). (Independente, pode vir sem migração).
-- **How much (Quanto):** Orçamento interno da empresa; **dois fluxos de receita**: (a) projetos de serviços especializados por hora (R$ 52,46/h, capacidade 336 h/mês) e (b) receita recorrente mensal MRR (ConfiNuvem Care, faixas R$ 1.171 a R$ 4.429/mês). Custo fixo mensal estimado de R$ 8.307,24 (administrativas R$ 710,00; marketing R$ 400,00; pró-labore de 4 sócios a R$ 1.621,00 mais INSS de 11%, R$ 7.197,24). Custos variáveis de projetos (infra temporária, licenças por cliente) e custos de gestão contínua (licenças Acronis/Vault, monitoramento, plantão) segregados por serviço. Detalhes em [plano-de-marketing.md](plano-de-marketing.md) (seções 3.3 e 3.6).
+- **How much (Quanto):** Orçamento interno da empresa; **dois fluxos de receita**: (a) projetos de serviços especializados por hora (R$ 58,49/h, capacidade total de 336 h/mês compartilhada entre projetos e Care) e (b) receita recorrente mensal de referência do ConfiNuvem Care (Básico R$ 10.547,88; Pro R$ 12.368,66; Enterprise R$ 17.531,10/mês), sujeita a cotação e validação do consumo. Custo fixo mensal estimado de R$ 8.307,24 (administrativas R$ 710,00; marketing R$ 400,00; pró-labore de 4 sócios a R$ 1.621,00 mais INSS de 11%, R$ 7.197,24). Custos variáveis de projetos (infra temporária, licenças por cliente) e custos de gestão contínua (licenças Acronis/Vault, monitoramento) segregados por serviço. Detalhes em [plano-de-marketing.md](plano-de-marketing.md) (seções 3.3 e 3.6).
 
 ## Referências bibliográficas
 
-ACRONIS. *Acronis Cyber Protect*: purchasing. Disponível em: <https://acronis.com/ru-ru/business/backup/purchasing>. Acesso em: 21 set. 2026.
+ACRONIS. *Cyber Platform*: pricing and licensing for service providers. Disponível em: <https://www.acronis.com/en/msp/pricing/>. Acesso em: 23 nov. 2026.
 
 AMAZON WEB SERVICES. *AWS Database Migration Service*: pricing. Disponível em: <https://aws.amazon.com/dms/pricing/>. Acesso em: 21 set. 2026.
 
@@ -295,7 +296,7 @@ CAPITAL ABERTO. Alibaba Cloud marca para julho início das operações no Brasil
 
 GOOGLE CLOUD. *Migration Center*: cloud migration planning and assessment. Disponível em: <https://cloud.google.com/migration-center>. Acesso em: 21 set. 2026.
 
-HASHICORP. *Vault*: pricing. Disponível em: <https://www.hashicorp.com>. Acesso em: 21 set. 2026.
+IBM. *HashiCorp Cloud Platform*: PAYG pricing. Disponível em: <https://www.ibm.com/products/hashicorp/pricing>. Acesso em: 23 nov. 2026.
 
 NEON. *Pricing*. Disponível em: <https://neon.tech/pricing>. Acesso em: 21 set. 2026.
 
