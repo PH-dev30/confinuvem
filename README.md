@@ -10,7 +10,7 @@ Este repositório não contém código. Ele reúne apenas documentação em Mark
 
 ## Estrutura
 
-```
+```text
 .
 ├── imagens/                                 # imagens usadas nos documentos (logo, diagramas)
 ├── diagrama-modelo-de-negocios.md           # diagrama do modelo de negócios
