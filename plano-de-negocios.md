@@ -51,6 +51,135 @@ Empresas pequenas que possuem bancos de dados físicos e documentos internos e d
 | Acronis | Backup as a Service e proteção cibernética integrada (Cyber Protect) | A partir de US$ 85/ano por estação de trabalho | Virtual — acronis.com |
 | Google Cloud Migration Center | Plataforma de planejamento e execução de migração para nuvem (inventário, dependências, TCO) | Gratuita (cobra-se apenas a infraestrutura de destino usada) | Virtual — cloud.google.com/migration-center |
 | HashiCorp | Encriptação e gerenciamento de segredos (Vault) | A partir de US$ 450/mês (cluster dev) + US$ 72,92/cliente/mês | Virtual — hashicorp.com |
+| Veeam | Backup e replicação (Veeam Backup & Replication) | A partir de US$ 1.080/ano por instância (socket) | Virtual — veeam.com |
+| Thales | Criptografia de dados (CipherTrust) | Sob consulta comercial | Virtual — cpl.thalesgroup.com |
+| Amazon Web Services | Infraestrutura cloud (compute, storage, network, DMS) | Pay-as-you-go (conforme uso) | Virtual — aws.amazon.com |
+| Google Cloud | Infraestrutura cloud (compute, storage, network, Migration Center) | Pay-as-you-go (conforme uso); Migration Center gratuito | Virtual — cloud.google.com |
+| Supabase | Plataforma PostgreSQL gerenciada (DBaaS) | A partir de US$ 25/mês (Pro) + uso | Virtual — supabase.com |
+| NeonDB | Plataforma PostgreSQL serverless (DBaaS) | A partir de US$ 19/mês (Scale) + uso | Virtual — neon.tech |
+
+---
+
+## Tabelas de Referência de Preços dos Fornecedores e Câmbio
+
+Esta seção documenta as premissas de custo dos fornecedores utilizados nos cálculos financeiros da ConfiNuvem, garantindo transparência e reprodutibilidade.
+
+### Cotação Fixa de Referência para o Dólar Americano (USD)
+
+| Parâmetro | Valor | Critério / Fonte |
+|-----------|-------|------------------|
+| **Cotação USD/BRL** | **R$ 5,40** | Valor conservador de referência para planejamento (set/2026), baseado na média histórica recente e margem de segurança cambial. Não reflete cotação de fechamento de data específica. |
+| **Data de definição** | 21 set. 2026 | Data de elaboração das tabelas de referência deste plano. |
+| **Aplicação** | Todos os custos em USD neste documento | Conversão única: valor em USD × 5,40 = valor em BRL. Valores em BRL já convertidos não devem ser recalculados com cotações posteriores. |
+
+> **Nota:** A cotação fixa de R$ 5,40/USD é uma premissa de planejamento para eliminar volatilidade nos cálculos de custos, precificação e viabilidade. Na execução real, os custos variarão com o câmbio do dia do faturamento de cada fornecedor.
+
+---
+
+### Fornecedores de Software e Serviços (SaaS / Licenças)
+
+| Fornecedor | Plano / Edição de Referência | Unidade de Cobrança | Preço (USD) | Preço (BRL)* | Tipo de Preço | Fonte / Data Consulta |
+|------------|------------------------------|---------------------|-------------|--------------|---------------|----------------------|
+| **Acronis** | Cyber Protect Cloud (MSP) | Por estação de trabalho / mês | US$ 7,08 | R$ 38,23 | Variável por consumo | acronis.com — 21 set. 2026 |
+| **Acronis** | Cyber Protect Home Office | Por dispositivo / ano | US$ 85,00 | R$ 459,00 | Fixo (anual) | acronis.com — 21 set. 2026 |
+| **HashiCorp** | Vault (HCP) — Cluster Dev | Por cluster / mês | US$ 450,00 | R$ 2.430,00 | Fixo (mensal) | hashicorp.com — 21 set. 2026 |
+| **HashiCorp** | Vault (HCP) — Cliente gerenciado | Por cliente / mês | US$ 72,92 | R$ 393,77 | Variável por cliente | hashicorp.com — 21 set. 2026 |
+| **HashiCorp** | Vault Enterprise (Self-hosted) | Por nó / ano | Sob consulta | — | Negociado | Contato comercial |
+| **Veeam** | Backup & Replication | Por socket / ano | US$ 1.080,00 | R$ 5.832,00 | Fixo (anual) | veeam.com — 21 set. 2026 |
+| **Veeam** | Data Platform (Universal License) | Por instância / ano | US$ 1.500,00 | R$ 8.100,00 | Fixo (anual) | veeam.com — 21 set. 2026 |
+| **Thales** | CipherTrust Data Security | Por nó / ano | Sob consulta | — | Negociado | Contato comercial — 21 set. 2026 |
+| **Google Cloud** | Migration Center | Por projeto | Gratuito | R$ 0,00 | Gratuito | cloud.google.com — 21 set. 2026 |
+| **Google Cloud** | Compute Engine (e2-medium, 1 vCPU, 4 GB) | Por hora | US$ 0,025 | R$ 0,135 | Pay-as-you-go | cloud.google.com — 21 set. 2026 |
+| **Google Cloud** | Cloud Storage (Standard, US) | Por GB/mês | US$ 0,020 | R$ 0,108 | Variável por consumo | cloud.google.com — 21 set. 2026 |
+| **AWS** | Database Migration Service (DMS) | Por hora de replicação | US$ 0,10–0,50 | R$ 0,54–2,70 | Variável por uso | aws.amazon.com/dms/pricing — 21 set. 2026 |
+| **AWS** | EC2 (t3.medium, 2 vCPU, 4 GB) | Por hora | US$ 0,0416 | R$ 0,225 | Pay-as-you-go | aws.amazon.com/ec2/pricing — 21 set. 2026 |
+| **AWS** | S3 Standard (US-East-1) | Por GB/mês | US$ 0,023 | R$ 0,124 | Variável por consumo | aws.amazon.com/s3/pricing — 21 set. 2026 |
+| **Supabase** | Pro Plan | Por projeto / mês | US$ 25,00 | R$ 135,00 | Fixo (mensal) | supabase.com/pricing — 21 set. 2026 |
+| **Supabase** | Usage (Compute + Storage + Egress) | Por consumo | Variável | Variável | Variável por consumo | supabase.com/pricing — 21 set. 2026 |
+| **NeonDB** | Scale Plan | Por projeto / mês | US$ 19,00 | R$ 102,60 | Fixo (mensal) | neon.tech/pricing — 21 set. 2026 |
+| **NeonDB** | Usage (Compute hours + Storage) | Por consumo | Variável | Variável | Variável por consumo | neon.tech/pricing — 21 set. 2026 |
+
+\* **Preço (BRL)** = Preço (USD) × 5,40. Valores arredondados a duas casas decimais.
+
+> **Legenda de Tipo de Preço:**
+> - **Fixo (mensal/anual):** Valor contratual fixo no período, independente de uso.
+> - **Variável por consumo:** Cobrado conforme uso real (horas, GB, requests, etc.).
+> - **Variável por cliente/recurso:** Escala com número de clientes, nós, estações, etc.
+> - **Pay-as-you-go:** Sem compromisso, cobrado por unidade de tempo/recurso consumido.
+> - **Negociado:** Requer cotação comercial; não há preço público de referência.
+> - **Gratuito:** Sem custo direto (pode haver custos indiretos de infraestrutura associada).
+
+---
+
+### Custos de Infraestrutura Cloud Estimados para Projeto de Referência
+
+A tabela abaixo consolida uma estimativa de custos de infraestrutura temporária durante uma migração típica (pequena empresa, ~40h de serviço), usada no cálculo do **custo variável unitário (R$ 12,00/h)** da seção 3.3.4 do plano de marketing.
+
+| Componente | Fornecedor | Qtd Estimada | Unitário (USD) | Unitário (BRL) | Total (BRL) | Observação |
+|------------|------------|--------------|----------------|----------------|-------------|------------|
+| Compute (migração + validação) | AWS / Google Cloud | 40 h | US$ 0,10/h | R$ 0,54/h | R$ 21,60 | Instâncias temporárias para dump/restore, CDC, testes |
+| Armazenamento temporário | AWS S3 / GCS | 500 GB × 1 mês | US$ 0,023/GB | R$ 0,124/GB | R$ 62,00 | Staging de dados durante migração |
+| Transferência de dados (egress) | AWS / Google Cloud | 200 GB | US$ 0,09/GB | R$ 0,486/GB | R$ 97,20 | Saída de dados para validação/cutover |
+| Licença Acronis (backup cliente) | Acronis | 10 estações × 1 mês | US$ 7,08/est. | R$ 38,23/est. | R$ 382,30 | Cyber Protect Cloud MSP |
+| Licença Vault (segredos cliente) | HashiCorp HCP | 1 cliente × 1 mês | US$ 72,92 | R$ 393,77 | R$ 393,77 | Cliente gerenciado no HCP |
+| **Subtotal estimado** | | | | | **R$ 956,87** | Arredondado para **R$ 960,00** no plano |
+| **Rateio por hora (40h)** | | | | | **R$ 24,00/h** | |
+| **Custo variável unitário adotado** | | | | | **R$ 12,00/h** | Valor conservador (50% do estimado) para margem de segurança |
+
+> **Nota:** O custo variável unitário de **R$ 12,00/h** (seção 3.3.4 do plano de marketing) foi definido de forma conservadora, considerando que nem todos os projetos demandam o conjunto completo acima e que há economia de escala em projetos maiores. O detalhamento acima demonstra a origem da estimativa de R$ 480,00 para 40h (R$ 12,00 × 40h).
+
+---
+
+### Custos Recorrentes do ConfiNuvem Care (Gestão Contínua — MRR)
+
+Estes custos compõem a base de cálculo das faixas de preço do **ConfiNuvem Care** (seção 3.6 do plano de marketing: Básico R$ 1.171, Pro R$ 2.257, Enterprise R$ 4.429).
+
+| Componente | Fornecedor | Escopo por Faixa | Custo Mensal Estimado (BRL) | Tipo |
+|------------|------------|------------------|----------------------------|------|
+| **Backup gerenciado (Acronis)** | Acronis Cyber Protect Cloud | Básico: 5 estações / Pro: 15 estações / Enterprise: 40 estações | Básico: R$ 191 / Pro: R$ 574 / Enterprise: R$ 1.529 | Variável por estação |
+| **Vault gerenciado (HashiCorp)** | HCP Vault — Cliente gerenciado | Básico: 1 cliente / Pro: 1 cliente / Enterprise: 3 clientes | Básico: R$ 394 / Pro: R$ 394 / Enterprise: R$ 1.181 | Variável por cliente |
+| **Monitoramento / SIEM** | AWS CloudWatch / Google Cloud Monitoring + alertas | Básico: básico / Pro: avançado / Enterprise: 24×7 + SIEM | Básico: R$ 150 / Pro: R$ 400 / Enterprise: R$ 1.200 | Estimado (pay-as-you-go) |
+| **Suporte N1/N2 (equipe)** | Próprio (pró-labore rateado) | Básico: 4h/semana / Pro: 10h/semana / Enterprise: 20h/semana | Básico: R$ 419 / Pro: R$ 1.048 / Enterprise: R$ 2.096 | Rateio de capacidade |
+| **Manutenção / Patches / Otimizações** | Próprio (pró-labore rateado) | Incluído nas horas acima | Incluído | Rateio de capacidade |
+| **Relatórios compliance LGPD** | Próprio (pró-labore rateado) | Trimestral (todas faixas) | Rateado nas horas de suporte | Rateio de capacidade |
+| **Total Custo Direto Estimado (BRL/mês)** | | | **Básico: ~R$ 1.154 / Pro: ~R$ 2.416 / Enterprise: ~R$ 6.006** | |
+
+> **Observação:** Os preços finais das faixas (Básico R$ 1.171, Pro R$ 2.257, Enterprise R$ 4.429) incorporam markup de 30% (taxa 1,4286) sobre o custo direto estimado, mais margem para impostos, risco cambial e investimentos. A faixa Enterprise tem custo direto superior ao preço final devido à alocação de capacidade dedicada; o equilíbrio ocorre no portfólio agregado.
+
+---
+
+### Resumo de Premissas para Reprodução dos Cálculos
+
+| Premissa | Valor | Onde Aplicada |
+|----------|-------|---------------|
+| Cotação USD/BRL fixa | R$ 5,40 | Todas as conversões USD → BRL neste plano |
+| Capacidade produtiva mensal | 336 h | Seção 3.3.1 (plano de marketing) |
+| Custo fixo total mensal | R$ 8.307,24 | Seção 3.3.2 (plano de marketing) |
+| Custo fixo unitário | R$ 24,72/h | Seção 3.3.3 (plano de marketing) |
+| Custo variável unitário (adotado) | R$ 12,00/h | Seção 3.3.4 (plano de marketing) |
+| CUT (Custo Unitário Total) | R$ 36,72/h | Seção 3.3.5 (plano de marketing) |
+| Taxa de markup | 30% (fator 1,4286) | Seção 3.3.6 (plano de marketing) |
+| Preço hora serviços especializados | R$ 52,46/h | Seção 3.3.7 (plano de marketing) |
+| ConfiNuvem Care — Básico | R$ 1.171/mês | Seção 3.6 (plano de marketing) |
+| ConfiNuvem Care — Pro | R$ 2.257/mês | Seção 3.6 (plano de marketing) |
+| ConfiNuvem Care — Enterprise | R$ 4.429/mês | Seção 3.6 (plano de marketing) |
+
+---
+
+**Referências de Preços (consultadas em 21 set. 2026):**
+
+- ACRONIS. *Acronis Cyber Protect*: purchasing. Disponível em: <https://acronis.com/ru-ru/business/backup/purchasing>.
+- AMAZON WEB SERVICES. *AWS Database Migration Service*: pricing. Disponível em: <https://aws.amazon.com/dms/pricing/>.
+- AMAZON WEB SERVICES. *Amazon EC2*: pricing. Disponível em: <https://aws.amazon.com/ec2/pricing/>.
+- AMAZON WEB SERVICES. *Amazon S3*: pricing. Disponível em: <https://aws.amazon.com/s3/pricing/>.
+- GOOGLE CLOUD. *Migration Center*: cloud migration planning and assessment. Disponível em: <https://cloud.google.com/migration-center>.
+- GOOGLE CLOUD. *Compute Engine*: pricing. Disponível em: <https://cloud.google.com/compute/pricing>.
+- GOOGLE CLOUD. *Cloud Storage*: pricing. Disponível em: <https://cloud.google.com/storage/pricing>.
+- HASHICORP. *Vault*: pricing. Disponível em: <https://www.hashicorp.com/products/vault/pricing>.
+- NEON. *Pricing*. Disponível em: <https://neon.tech/pricing>.
+- SUPABASE. *Pricing*. Disponível em: <https://supabase.com/pricing>.
+- THALES GROUP. *CipherTrust*: enterprise data encryption solutions. Disponível em: <https://cpl.thalesgroup.com/encryption>.
+- VEEAM SOFTWARE. *Veeam pricing*. Disponível em: <https://www.veeam.com/pricing.html>.
 
 ## Análise SWOT
 
