@@ -169,6 +169,8 @@ Integrantes x horas x dias no mês x 0,7 = 4 x 6 x 20 x 0,7 = 336 horas produtiv
 | **Subtotal financeiras** | | **R$ 7.197,24** |
 | **Custo fixo total** | | **R$ 8.307,24** |
 
+> **Nota:** Este custo fixo total contempla apenas **Custos Fixos Compartilhados (FC)** — itens que não variam com o número de clientes (pró-labore, contabilidade, aluguel, licenças base da empresa, marketing fixo). Custos que escalam por cliente (Acronis por estação, Vault por cliente, monitoramento por faixa, infraestrutura cloud do cliente) são classificados como **Variáveis por Cliente (VC)** e tratados separadamente no custo variável unitário (R$ 12,00/h) ou nas faixas do ConfiNuvem Care (MRR). Ver metodologia completa na seção *Classificação de Custos das Ferramentas e Metodologia de Rateio* do plano de negócios.
+
 ### 3.3.3 Custo fixo unitário
 
 ```
@@ -181,13 +183,21 @@ Custos que crescem com o volume de projetos: infraestrutura de homologação e a
 
 A conversão de custos em dólar (USD) para real (BRL) utiliza uma **cotação fixa de referência de R$ 5,40/USD**, definida em 21 set. 2026 como premissa de planejamento para eliminar volatilidade cambial nos cálculos (ver detalhes nas *Tabelas de Referência de Preços dos Fornecedores e Câmbio* do plano de negócios).
 
+A **classificação e rateio dos custos das ferramentas** segue a metodologia documentada no plano de negócios (seção *Classificação de Custos das Ferramentas e Metodologia de Rateio*), que distingue:
+- **Custos Fixos Compartilhados (FC):** Rateados no custo fixo unitário (R$ 24,72/h) — ex.: cluster Vault base, licenças internas.
+- **Custos Variáveis por Cliente — Projeto (VC-P):** Incluídos no custo variável unitário (R$ 12,00/h) — ex.: Acronis/Vault por cliente durante migração, infraestrutura temporária (PT).
+- **Custos Variáveis por Cliente — Recorrente (VC-R):** Base das faixas do ConfiNuvem Care (MRR) — ex.: Acronis/Vault/Monitoramento por faixa.
+- **Custos Mistos (MX):** Componente base no FC, componente por cliente no VC-R.
+
+Esta separação evita dupla contabilização: custos fixos não entram no variável e vice-versa; custos de projeto (migração) não se confundem com custos recorrentes (Care).
+
 Estimativa para um projeto de referência (pequena empresa, 40 horas de serviço): R$ 480,00 de infraestrutura e licenças (preços de fornecedores em USD convertidos à taxa fixa de R$ 5,40; detalhamento nas tabelas de referência do plano de negócios).
 
 ```
 Custo variável unitário = R$ 480,00 / 40 h = R$ 12,00 por hora
 ```
 
-> **Nota:** O valor de R$ 12,00/h é conservador (≈50% do custo variável estimado bruto de ~R$ 24,00/h), proporcionando margem de segurança para variação de escopo e economia de escala em projetos maiores. Ver seção *Custos de Infraestrutura Cloud Estimados para Projeto de Referência* no plano de negócios.
+> **Nota:** O valor de R$ 12,00/h é conservador (≈50% do custo variável estimado bruto de ~R$ 24,00/h), proporcionando margem de segurança para variação de escopo e economia de escala em projetos maiores. Ver seção *Custos de Infraestrutura Cloud Estimados para Projeto de Referência* e *Classificação de Custos das Ferramentas e Metodologia de Rateio* no plano de negócios.
 
 ### 3.3.5 Custo unitário total (CUT)
 
