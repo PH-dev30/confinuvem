@@ -1,3 +1,5 @@
+# AGENTS
+
 - Use conventional commits para os commits do repositório.
 - Adicione seu trailer de co-autoria nos commits.
 - Sempre que for fazer alterações, use uma branch separada da main.

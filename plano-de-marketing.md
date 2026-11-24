@@ -36,7 +36,7 @@ Logomarca: nuvem azul com símbolo de verificação (segurança e confiança) e 
 
 ### 3.1.4 Slogan
 
-**"Confiança na nuvem"**
+“Confiança na nuvem”
 
 ## 3.2 Descrição do produto/serviço
 
@@ -57,7 +57,7 @@ Diretriz **conservadora e de mínimo custo inicial**: operação 100% remota (ho
 
 Cada integrante dedica 6 horas diárias durante 20 dias úteis por mês (120 h mensais; 480 h no total).
 
-```
+```text
 Integrantes x horas x dias no mês x 0,7 = 4 x 6 x 20 x 0,7 = 336 horas produtivas/mês
 ```
 
@@ -87,7 +87,7 @@ Integrantes x horas x dias no mês x 0,7 = 4 x 6 x 20 x 0,7 = 336 horas produtiv
 
 ### 3.3.3 Custo fixo unitário
 
-```
+```text
 Custo fixo total / capacidade produtiva = R$ 8.307,24 / 336 h = R$ 24,72 por hora
 ```
 
@@ -97,13 +97,13 @@ Custos que crescem com o volume de projetos: infraestrutura de homologação e a
 
 Estimativa para um projeto de referência (pequena empresa, 40 horas de serviço): R$ 480,00 de infraestrutura e licenças (preços de fornecedores em dólar, convertidos de forma conservadora).
 
-```
+```text
 Custo variável unitário = R$ 480,00 / 40 h = R$ 12,00 por hora
 ```
 
 ### 3.3.5 Custo unitário total (CUT)
 
-```
+```text
 CUT = custo fixo unitário + custo variável unitário = R$ 24,72 + R$ 12,00 = R$ 36,72 por hora
 ```
 
@@ -117,13 +117,13 @@ CUT = custo fixo unitário + custo variável unitário = R$ 24,72 + R$ 12,00 = R
 | Investimentos (5–10%) | 5 |
 | **Total** | **30** |
 
-```
+```text
 Taxa de markup = 100 / (100 - 30) = 100 / 70 = 1,4286
 ```
 
 ### 3.3.7 Preço de venda da hora de serviço (básica)
 
-```
+```text
 CUT x taxa de markup = R$ 36,72 x 1,4286 = R$ 52,46 por hora
 ```
 
